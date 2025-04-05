@@ -3,9 +3,17 @@
     padding: 0;
     font-family: "Vazirmatn", sans-serif;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(98vw - 216px);
+    padding: 0 108px;
+    gap: 40px;
+}
 .tagline {
     background-color: #032340;
-    width: 100%;
+    width: 100vw;
     height: 40px;
     color: #FFFFFF;
     font-size: 14px;
@@ -17,6 +25,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .headerInfo {
     display: flex;
@@ -69,7 +78,7 @@ header {
     background-color: #F9F9F9;
     border-radius: 16px;
     justify-content: space-between;
-    padding: 16px 40px;
+    padding: 16px;
 
 }
 .mainMenu {
@@ -92,18 +101,23 @@ header {
     display: flex;
     justify-content: space-between;
 }
-.viewProducts {
-    width: 207px;
-    height: 48px;
+.introductionInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+.buttonStyle {
     border-radius: 10px;
     padding: 8px 24px;
     background-color: #032340;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 8px;
 }
-.viewProducts button {
-    background-color: #032340;
+.buttonStyle button {
+    background-color: transparent;
     border: none;
     color: #FFFFFF;
     font-size: 16px;
@@ -127,8 +141,16 @@ header {
     display: flex;
     justify-content: center;
 }
+.background {
+    width: 100vw;
+    margin-top: -150px;
+    z-index: -1;
+}
 .newProducts {
     display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
 }
 .newProductsItems {
     background-size: cover;
@@ -136,6 +158,8 @@ header {
     height: 384px;
     display: flex;
     align-items: end;
+    border-radius: 16px;
+    overflow: hidden;
 }
 .newProductsItems1 {
     background-image: url("./assets/women clothes.png");
@@ -148,4 +172,255 @@ header {
     height: 136px;
     width: 100%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-right: 16px;
+    gap: 16px;
+}
+.newProductsItemsShowMore {
+    width: 392px;
+    height: 384px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 16px;
+}
+.newProductsItemsShowMore p {
+    width: 309px;
+}
+.newProductsButton {
+    background-color: #FA541C;
+}
+.baner {
+    width: 100vw;
+    height: 600px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.fitnessBaner {
+    background-image: url("https://s3-alpha-sig.figma.com/img/be40/cb2b/10ad4ccd1098fc6a219c06c8d1f4f11c?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ObNFXPkSog9jbR89WjoQ7MbktJtpGQMWqcRD0ll9VAY7xRAqlDMIoOo9d1I~p94sjOXZAuZ2R~UHLEpKXKqmJm29O-fmSol9VaSTWV8XtNvsV3zyp-5CrbKmrrmjM6Kf-Ldfx2GB3iu-HARmiVKBWvkb003NL7obScBD2IJZW1VXFuRdftUPMstpUnwtBHinxgp6szVw0uLbV4pt-z7Prp~O0HiI~a636PJO-fsX4dKAI45x1w8hJPPQzRdwGDWutQMzSDn0LNIEUCkUdzya2Cj73id3OkE8Z0-bCiYYzetE-dcymwOwDSop1pMomVo~uD2S5xi8aTnQo166b7CmnQ__");
+}
+.fitnessBanerText , .bikeBanerText{
+    padding-right: 250px;
+    padding-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+}
+.newsBaner {
+    align-items: start;
+}
+.newsBanerText {
+color: white;
+padding-right: 420px;
+padding-top: 80px;
+width: 409px;
+}
+.newsBanerText h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+.newsBanerText h6 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.offSalesSection , .shoesSection , .specialoffsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.salesContainer, .shoesContainer , .bikeSaleContainer , .popularProductsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+.shoesButton , .offsalesbutton , .specialOffButton {
+    background-color: transparent;
+    align-self: flex-end;
+}
+.shoesButton button , .offsalesbutton button , .specialOffButton button {
+    color: #032340;
+}
+.sales , .shoes , .bikeSales , .popularProducts {
+    background-size: contain;
+    width: 366px;
+    height: 467px;
+    display: flex;
+    align-items: end;
+    border-radius: 16px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.sales div , .shoes div , .bikeSales div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: 187px;
+    padding: 16px;
+}
+.popularProducts div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding:32px 16px;
+    background-color: #021526;
+    width: 100%;
+    color: white;
+}
+.sales1 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/44b2/6ae8/ecb42d29ad3245a39fa9c18729307acd?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nbHEuDcC68l97VzZHbMHofGSp3n5XSoPGsuBNXKN6vUy2Wt9tlFyd-DBiPstx4PZY3zYjRYrRBYgS0mwtnLJ6MeUMuD3CPnQSuO36w-ZXeHF7pJa4cTfbfbD02h3ZR4yIRzFxX8K3ixQ8Z8vD8E-GrnRk5H-vMCCnkVrftJhk7cGl4TB59-kmfuCERL34~GIcVyYQ8eSy0SUmL5zgue~8V9qLOQjdS5nZQa3ApY7CNTO6PzdEm6yf7UeMmCfYbGgFVMdvuFQUM9Z-nJQ2cXs3ilS030PhuPkn5R1evGfxK8qhNnX6A0d5XYW0GFpY2j2ZEiOfbVJ9aPvR4WvhWL7vg__");
+}
+.sales2 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/4687/08a4/4895e646451c55368d7d145284355113?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=kxE5uRUcpPI7Z1EJIllsEXEvDT~c0xS5W1eZtQTHh19Fhq~HlOR~T9mma88c5vgSX3VN0PfkpZOIvASKZtcqB9lxdvHWRJ2NyIXVhCQRWKikdGnoFJ83QSf5C584~bGYW2x3bD1zievS2Xi7gsdazAR6~8q--GB-mshXmXh9bCoLCma1suoxT0nDRt-q5v-mi4CsTxeIoTKJ01zas4r30G2SKJf3neuKUMr4pKzZpwKRlFXOStRsilIppJM6n2m3NqKb3FeFFgJSSwwAIDOpRuK4MJZbXj2Liy73ws20RqYqcoCsCR9aCUqjh~j~sPHca7hhxXB1hk2ZZijUOES1BQ__");
+}
+.sales3 {
+   background-image: url("https://s3-alpha-sig.figma.com/img/c08f/cdce/2b079525b9dea0ac910f16d0731a1aa2?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZmUoqfzrFXLjDicGBKI3628P6LvV92qf1H9bdy53d~B7xnx5GqDpgIX9nGZK9lw9kVQovGmYDXdCjGd7zvL7z7CQ5wQoi8EsCuulKAQJWCintl5viEhLyKWcLhhxFtpHOis8i4yw0wGlM71RmmTG9xMD-NmcHLHNzzCur1U1bfV~yDESsPbU5-qY6JTxddbk-IXUictpVknOePAxq6ZSwYasZI4D2UZLXS-fHfjavAdOrgulptaDV2mVXK4cWG8ulPX~wd1me5JxmoTiynlhaTX9SlS1--jW9itunjUyCoPJ-p6-uBC1c9buTfbTqJbHHFmF6NZrtt9b0pdRrFSiLQ__");
+}
+.shoes1 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/7c48/9c85/7c19a9d9167b406f35fdbf826d2b1b8a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Xvp4S~JycmIwjENhfhpSAt7WPpNV4gbuMCKsOP6R37Cs2vjFeTknZnZcm--sV-xvGNLgX2oludhFSLJKSxkuqAyePZH3z8rJgnkmyKWB6sTWfDI8K46zLKiGz11N4xLtzNds19ckEHa49Yw26LDDHVtCUr1nXpvWD7UvL9ihZAfVRs2oY2TUh4a3HHM57b~-IomRYKV9nq60YWigQpB8wfFkN~OvNzxg0SzOOcfNA1YFKGivvNaFGGeuR5-PQrAJ808FooV1nCGPnyEM-PedkbY9YoZ-wG5WOsmeHqjMTHLRwOMOJuC6DZUqdikQEOnB4IfkMKWtqvt~ERPXKPWxEQ__");
+}
+.shoes2 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/c08f/cdce/2b079525b9dea0ac910f16d0731a1aa2?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZmUoqfzrFXLjDicGBKI3628P6LvV92qf1H9bdy53d~B7xnx5GqDpgIX9nGZK9lw9kVQovGmYDXdCjGd7zvL7z7CQ5wQoi8EsCuulKAQJWCintl5viEhLyKWcLhhxFtpHOis8i4yw0wGlM71RmmTG9xMD-NmcHLHNzzCur1U1bfV~yDESsPbU5-qY6JTxddbk-IXUictpVknOePAxq6ZSwYasZI4D2UZLXS-fHfjavAdOrgulptaDV2mVXK4cWG8ulPX~wd1me5JxmoTiynlhaTX9SlS1--jW9itunjUyCoPJ-p6-uBC1c9buTfbTqJbHHFmF6NZrtt9b0pdRrFSiLQ__");
+}
+.shoes3 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/74c0/f629/0db6eab4cf009c7370ef255ddeb14a94?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rrGCJIQRQNBOtW90~OxkUcTw2Ce0~lUQAWaBUxxRql39VQkfNpX6aHHKwIoBiVwFqKHYqk-LeoUGqw69P83uln0t3Q5ilyc8sOABC77Xs5utmyahZ7tBMu6AxRSzp4FoofyslyAWCQ8GEKFxGWjxU7MTRcF7GJWGE4AwYhj~fUntDo0ujM9kPxV~JNpvrJGqe-tmx4l9wJNnZXV4-~AWV5LvxNTqGI-ZHOwL25EGWRjWBCz1ae5mN3mb1pwXwcLdRCDACqzXIhxfc08Crn9x2PuxdcurhUqIsxa7AUOwwR4GRoPa-uM9LopxDlQsTumnGgPMAZrCWGgzooaZ9uWr0A__");
+}
+.bikeBaner {
+    background-image: url("https://s3-alpha-sig.figma.com/img/d25d/bb90/6e06e3ac7213578c0234646b47c8be41?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fJbntNDpgz6LSd1PsU45-zoGh~VEOwB95XDXppdfFusD~GLroZ9Acu6axPRkWp7dFg3Hc-C~lKb56TV7rH9eV8Ax-E-1RelVduT7qhCw~3g8J0IesTuddEvBDwXPidcc0BHFyeZefZvPNitnd87Z38wprq0moRuwYT3jdsBqnLq7EnKPTJKDnIKZQxDjokFOg9DetZn4fm1HdTTCOn~LDPK1c70fYEpezZ0OzXF5Z37B7c20mLGcc4H0EkM0SuXBGnp5sM4YlHnRF51wEdrumbjFmKoAX8PghtxQ5ymnaJ9cafcdRZiQxzX2cjc81xwvvdHNNCWByDkeDVyaImI4MQ__");
+}
+.bikeSales1 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/6a28/7f14/00e07499ab978151e56224380c986e78?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=G4usfPiy2a6wDVejRPiMmHRm6zrI1hIISBoPbt2ru3WCGryvwCjAx-kAeMJVyfNc39~IY5gMrcI8FwTA~LXQC-c2AZFvakvuFhrwKJfTPbstynZFaznnBbMZmgAprEhBJdo-8hGtSltZUjMdMUluvU6BlIR1YzkTGClx~BOHxHVCRoVLjUpXCcPb0Kva~30RWQESCYbmz4vyOFgzpKjqd9D~rdv2GFChKSzd4yk-e5PlnctNnxfoQgPzXDV1sov0UOYMZ30zHUDCGZAXVJD31BMa1-qUQvy1aaq~Xw5~to~JsGjUNUl6R~yMWqqLNu-tPDgjo~UWdX7Ge2YLseLW1A__");
+}
+.bikeSales2 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/0ab5/81e4/ea559fc4e560a4e976cd06b820a70086?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=H7TxuxPdpKsrA2ONyp-cv~lPYYNiPBMiOCZ~OIx9tunn-~J-HQa2SfXZlTA2YP~DnWEJ6l~UXnMa13NT2YPW7IYj1sG-O4AkhbiOWPykGAcxlPb4NHXzed8klPN7j8druq1LxOCQsUX5Tu4nDU5GbzMSgyQI6YMk~OU9ojnpVXsKESNBI5UUtkq2VopN1~aqhdETqtGN4u-vZbIFHDsmXlJ6l7tZGScV847E23xtICXNOB4vY4d7~ZOaMxWwRks-aeOg6vi2ATEigSb36SUi~UDVfavbi8hvzWPIv0f4~gSs7UmCn4XXiQlqnvC9KEcsC3VhUNcQ-eAxAYTEbPi5aA__");
+}
+.bikeSales3 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/cec0/1461/8736428cf5c7dda14f0b84024d6bc3ac?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=J0m8dGoURvLjmKUPJioBdkErx1YSDfPZqvXK4XkDuovSV4VZiO-s~y-TpBbKosRRRftgg0awULNY~x3JRIU0mzF5D~3tQTg6Cz~0c3J-QedhJr1q7ixDILca8uRf41VT1U-Iuy5777FXL3hqbgmNpQFGklOe~VRGOD25ETgNeQrA4G5u6uohU3trUd35ZKgWAexbi3VDwsdqd224QUtfSIWA8PmU0jIj2Jm8IcUm4hTqXjm2jXhtFS3ZysekY2m2VP6BbbGPXV-Yg9AdJ59w4pz~FPXiKlAsodB~HWJPplN9RUcm97lr85ipa-11QRvVs1tAElDhDrXA~zGsyE5VBw__");
+}
+.popularProducts1 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/cbab/fbec/70fb9396652a1e542d144dceaa7f3779?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=doGx45kdJhZ6Ryt4vPW3PpadM10~bWvPpu5GcpbnBKM~D3d-9DF7RBQu1wUE1GkFVsT4NSZWI7x0q5s0QnQn8Xx~ri3BV4~e5kkdOjTUPN~MGFPa~tCZF5H1jmuaApfkR6aIyCDEg5a0MCUnW~UbW2r7qu06-TyOTXLtLk8hDUjxa2fcgEZqo0~C6ZIRmlS4HZ8k97pPCp8~Okrg0cjDqhJMeblyhVtOJ9bxAdxzB36u1Sr9Y6U3ZPPt3hMg651mDPMqULJKi~Xkwjt1Hl7kuMlvb2t2qz9iSOoY3jKmTZKJg0zzUJCRtXhApm2QoF1grLUaaL01zk27tLt1PkcVKQ__");
+}
+.popularProducts2 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/667f/b484/c4f93f1801fa632cbb1564f6661fc254?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=akKptWvZnTDOFYqow1P7ANZs2QCCqtROQVpZD3p7UAjVPbTKk-TaROznWcBf88jZh0~KeEj4KjcSeDjq0KiehG6WllCjwFAAki~Fds3FJZ4BNYV3FG2ijJylPuRROnl9y102NGu4coQwMdOCvlWz2WBd1dMy8LIjgOdsj4jZLx1~TwPIeemecSPCF12WZRSsZ2ujV86b2iRP3tLKhRqdSML0vnzjz11cVZyNRcdtXHQdnAl1-CudDqOVTwLD7D6gGX1vpq~2Zg~iEAIrrJpVg5TanQ-U~Q2neLAnqFi5m9as2kGSJz4yYr0lXKnKUDrMkPhsrIEhpXaL8xfnT3cOsA__");
+}
+.popularProductsText {
+    width: 392px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 16px;
+}
+.popularProductsText p{
+    width: 309px;
+}
+.popularProductsButton {
+    background-color: #FA541C;
+    width: 309px;
+}
+.newsBaner {
+    background-image: url("https://s3-alpha-sig.figma.com/img/c743/d095/1557c3c163f15681dfb206b40ac4ea25?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Q3XknLqzm6rI9gZpbpJ9ZONdVGRJNpcakYZQ-QnSINnvIUf4uzcMuwD~cRR4PHISgLkpNVYVWIbi5lVFUioSWGMyZJC4~YTyjaiLcSv38gIO7B9zbo3fRjTLQ3gLgpSlY9S6RMycmyBVGlgFbCLSNEsCMNOYELFDA6zdS1q6qzoo3~hgZjEoTIGs56nIQMshQwGh05iUz6-H4m5pWw6DI9U6LYxTPl02r9VvWFN-9Aa~W6Cb8KhthC4LF1P0LgJ5bD4HKJ425kyN-nuS-Gj6uDbFzNNFSta~JtnLfWUSTraljCqKf6lWkEyXpTYQub9~BITAxukhqZFcXDTTzFmzhA__");
+}
+.newsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.newsSections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsSections div {
+    width: 564px;
+}
+
+.newsSections img {
+    width: 564px;
+    height: 307px;
+}
+
+.experienceSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 241px;
+    background-color: #f4faff;
+    gap: 16px;
+    width: 100vw;
+}
+.experienceSection p {
+    width: 358px;
+}
+.experienceSection img {
+    width: 167px;
+    height: 172px;
+}
+footer {
+    background-color: #021526;
+    color: #F9F9F9;
+    font-size: 14px;
+    width: 100vw;
+}
+.footerInfo {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+}
+.footerInfoRight {
+    display: flex;
+    gap: 40px;
+}
+.footerInfoLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footerInfoDown {
+    display: flex;
+    justify-content: space-between;
+}
+.footerIndoDesc {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+.footerIcons {
+    gap: 32px;
+}
+.footerInfoLogosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+}
+.footerInfoLogosContainer img {
+    width: 68px;
+    height: 80px;
+}
+.footerCopyrightSection {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px #CBCBCB solid;
+    padding: 8px 0;
+}
+.footerCopyrightSection div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
