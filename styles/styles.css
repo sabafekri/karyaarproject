@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Vazirmatn", sans-serif;
+}
+.tagline {
+    background-color: #032340;
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px;
+}
+.logoInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    height: 32px;
+    padding-bottom: 10px;
+}
+.loginContainer {
+    width: 142px;
+    height: 48px;
+    display: flex;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+
+}
+.headerLeft {
+    display: flex;
+    gap: 16px
+}
+.loginButton {
+    background-color: #FFFFFF;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+.loginIcon {
+    width: 24px;
+    height: 24px;
+}
+.cart {
+    width: 48px;
+    height: 48px;
+}
+.mainMenuBar {
+    width: 100%;
+    display: flex;
+    background-color: #F9F9F9;
+    border-radius: 16px;
+    justify-content: space-between;
+    padding: 16px 40px;
+
+}
+.mainMenu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+.menuItems {
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.menuIcon {
+    width: 18px;
+    height: 18px;
+}
+.introduction {
+    display: flex;
+    justify-content: space-between;
+}
+.viewProducts {
+    width: 207px;
+    height: 48px;
+    border-radius: 10px;
+    padding: 8px 24px;
+    background-color: #032340;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.viewProducts button {
+    background-color: #032340;
+    border: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+.arrowIcon {
+    width: 23px;
+    height: auto;
+    color: #FFFFFF;
+}
+.hero {
+    width: 422px;
+    height: 475px;
+}
+.introductionLeft {
+    display: flex;
+    flex-direction: column;
+
+}
+.achievements {
+    display: flex;
+    justify-content: center;
+}
+.newProducts {
+    display: flex;
+}
+.newProductsItems {
+    background-size: cover;
+    width: 392px;
+    height: 384px;
+    display: flex;
+    align-items: end;
+}
+.newProductsItems1 {
+    background-image: url("./assets/women clothes.png");
+}
+.newProductsItems2 {
+    background-image: url("./assets/women clothes 2.png");
+}
+.newProductsItems div {
+    background-color: #021526;
+    height: 136px;
+    width: 100%;
+    color: white;
+}
