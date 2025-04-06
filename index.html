@@ -17,6 +17,13 @@
                 <img src="./styles/assets/logo.png" alt="" class="logo">
                 <p>فروشگاه لوازم ورزشی فیت‌لند</p>
             </div>
+            <div class="headerSearch">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.5 21.75C5.85 21.75 1.25 17.15 1.25 11.5C1.25 5.85 5.85 1.25 11.5 1.25C17.15 1.25 21.75 5.85 21.75 11.5C21.75 17.15 17.15 21.75 11.5 21.75ZM11.5 2.75C6.67 2.75 2.75 6.68 2.75 11.5C2.75 16.32 6.67 20.25 11.5 20.25C16.33 20.25 20.25 16.32 20.25 11.5C20.25 6.68 16.33 2.75 11.5 2.75Z" fill="#FA541C"/>
+                    <path d="M21.9975 22.7504C21.8075 22.7504 21.6175 22.6804 21.4675 22.5304L19.4675 20.5304C19.1775 20.2404 19.1775 19.7604 19.4675 19.4704C19.7575 19.1804 20.2375 19.1804 20.5275 19.4704L22.5275 21.4704C22.8175 21.7604 22.8175 22.2404 22.5275 22.5304C22.3775 22.6804 22.1875 22.7504 21.9975 22.7504Z" fill="#FA541C"/>
+                    </svg>                    
+                <input type="text"/>
+            </div>
             <div class="headerLeft">
                 <div class="loginContainer">
                     <button class="loginButton">ثبت نام | ورود</button>
@@ -118,15 +125,24 @@
         <div class="introductionLeft">
             <div class="achievements">
                 <img src="./styles/assets/shop.png" alt="">
-                <p>+300 محصولات متنوع</p>
+                <div>
+                    <h2>۳۰۰+</h2>
+                    <p>محصولات متنوع</p>
+                </div>
             </div>
             <div class="achievements">
                 <img src="./styles/assets/like.png" alt="">
-                <p>95% رضایت مشتری</p>
+                <div>
+                    <h2>% ۹۵</h2>
+                    <p>رضایت مشتری</p>
+                </div>
             </div>
             <div class="achievements">
                 <img src="./styles/assets/calendar.png" alt="">
-                <p>4 روز از خرید تا دریافت</p>
+                <div>
+                    <h2>۴ روز</h2>
+                    <p> روز از خرید تا دریافت</p>
+                </div>
             </div>
         </div>
     </div>
@@ -134,14 +150,14 @@
     <div class="newProducts">
         <div class="newProductsItems newProductsItems1">
             <div>
-                <p>جدیدترین تخفیفات فصل برند پوما</p>
-                <p>50% تخفیف روی تمام محصولات</p>
+                <p class="popularProductsItems">جدیدترین تخفیفات فصل برند پوما</p>
+                <p class="popularProductsItems"><span class="off">۵۰ ٪</span> تخفیف روی تمام محصولات</p>
             </div>
         </div>
         <div class="newProductsItems newProductsItems2">
             <div>
-                <p>جدیدترین تخفیفات فصل برند نایک</p>
-                <p>50% تخفیف روی تمام محصولات</p>
+                <p class="popularProductsItems">جدیدترین تخفیفات فصل برند نایک</p>
+                <p class="popularProductsItems"><span class="off">۵۰ ٪ </span>تخفیف روی تمام محصولات</p>
             </div>
         </div>
         <div class="newProductsItemsShowMore">
@@ -186,26 +202,42 @@
         <div class="salesContainer">
 <!-- arrow icon next -->
             <div class="sales sales1">
-                <div>
+                <div class="salesDiv">
                     <p>سویشرت نایک مدل AO-14</p>
-                    <p>۳۰۰,۰۰۰ تومان</p>
-                    <p>از سایز L تا XXL</p>
+                    <p class="price">۳۰۰,۰۰۰ تومان</p>
+                    <p class="size">از سایز L تا XXL</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
                 </div>
             </div>
             <div class="sales sales2">
-                <div>
+                <div class="salesDiv">
                     <p>ست نایک مدل S-2000</p>
-                    <p>۲۰۰۰۰۰ تومان</p>
-                    <p>از سایز L تا XXL</p>
+                    <p class="price">۲۰۰۰۰۰ تومان</p>
+                    <p class="size">از سایز L تا XXL</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
                 </div>
             </div>
             <div class="sales sales3">
-                <div>
+                <div class="salesDiv">
                     <p>کفش نایک مدل S-2000</p>
-                    <p>۲۰۰۰۰۰ تومان</p>
-                    <p>از سایز L تا XXL</p>
+                    <p class="price">۲۰۰۰۰۰ تومان</p>
+                    <p class="size">از سایز L تا XXL</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
                 </div>
             </div>
+        </div>
 <!-- arrow icon back -->
         </div>
     </div>
@@ -221,28 +253,41 @@
             </div>
         <div class="shoesContainer">
             <div class="shoes shoes1">
-                <div>
+                <div class="shoesDiv">
                     <p>نایک مدل AO-14</p>
-                    <p>۳۰۰,۰۰۰ تومان</p>
-                    <p>از سایز L تا XXL</p>
+                    <p class="price">۳۰۰,۰۰۰ تومان</p>
+                    <p class="size">از سایز L تا XXL</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
                 </div>
             </div>
         <div class="shoes shoes2">
-            <div>
+            <div class="shoesDiv">
                 <p>کفش نایک 2024</p>
-                <p>۲۰۰۰۰۰ تومان</p>
-                <p>از سایز L تا XXL</p>
-            </div>
-        </div>
-        <div>
-            <div class="shoes shoes3">
-                <div>
-                    <p>کفش نایک مدل S-2000</p>
-                    <p>۲۰۰۰۰۰ تومان</p>
-                    <p>از سایز L تا XXL</p>
+                <p class="price">۲۰۰۰۰۰ تومان</p>
+                <p class="size">از سایز L تا XXL</p>
+                <div class="circles">
+                    <div class="circle circle1"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle3"></div>
                 </div>
             </div>
         </div>
+            <div class="shoes shoes3">
+                <div class="shoesDiv">
+                    <p>کفش نایک مدل S-2000</p>
+                    <p class="price">۲۰۰۰۰۰ تومان</p>
+                    <p class="size">از سایز L تا XXL</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="baner bikeBaner">
@@ -272,40 +317,58 @@
             <button>مشاهده همه محصولات</button>
         </div>
         <div class="bikeSaleContainer">
-            <div class="bikeSales bikeSales1">
-                <div>
+            <div class="bikeSales">
+                <div class="bikeSales1"></div>
+                <div class="bikeSalesDiv">
                     <p>اسکوتر مدل A-155</p>
-                    <p>۳۰۰,۰۰۰ تومان</p>
-                    <p>از سایز 10 تا 14</p>
+                    <p class="price">۳۰۰,۰۰۰ تومان</p>
+                    <p class="size">از سایز 10 تا 14</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
                 </div>
             </div>
-            <div class="bikeSales bikeSales2">
-                <div>
+            <div class="bikeSales">
+                <div class="bikeSales2"></div>
+                <div class="bikeSalesDiv">
                     <p>دوچرخه مدل S-2000</p>
-                    <p>۲۰۰۰۰۰ تومان</p>
-                    <p>۲۰۰۰۰۰ تومان</p>
+                    <p class="price">۲۰۰۰۰۰ تومان</p>
+                    <p class="size">۲۰۰۰۰۰ تومان</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
                 </div>
             </div>
-                <div class="bikeSales bikeSales3">
-                <div>
+            <div class="bikeSales">
+                <div class="bikeSales3"></div>
+                <div class="bikeSalesDiv">
                     <p>دوچرخه مدل AO-14</p>
-                    <p>۲۰۰۰۰۰ تومان</p>
-                    <p>از سایز 10 تا 14</p>
+                    <p class="price">۲۰۰۰۰۰ تومان</p>
+                    <p class="size">از سایز 10 تا 14</p>
+                    <div class="circles">
+                        <div class="circle circle1"></div>
+                        <div class="circle circle2"></div>
+                        <div class="circle circle3"></div>
+                    </div>
                 </div>
-                </div>
+            </div>
         </div>
     </div>
     <div class="popularProductsContainer">
         <div class="popularProducts popularProducts1">
             <div>
-                <p>جدید ترین تخفیفات فصل برند پوما</p>
-                <p>۵۰ ٪ تخفیف روی تمام محصولات </p>
+                <p class="popularProductsItems">جدید ترین تخفیفات فصل برند پوما</p>
+                <p class="popularProductsItems"><span class="off">۵۰ ٪</span> تخفیف روی تمام محصولات </p> 
             </div>
         </div>
         <div class="popularProducts popularProducts2">
             <div>
-                <p>جدید ترین تخفیفات فصل برند نایک</p>
-                <p>۵۰ ٪ تخفیف روی تمام محصولات </p>
+                <p class="popularProductsItems">جدید ترین تخفیفات فصل برند نایک</p>
+                <p class="popularProductsItems"><span class="off">۵۰ ٪</span> تخفیف روی تمام محصولات </p>
             </div>
         </div>
         <div class="popularProductsText">
@@ -324,24 +387,42 @@
     </div>
     <div class="baner newsBaner">
         <div class="newsBanerText">
-            <h2>بزودی کامل ترین مجموعه از لوازم کمپ در فیت لند </h2>
+            <h3>بزودی کامل ترین مجموعه از لوازم کمپ در فیت لند </h3>
             <h6>از سفر لذت ببر</h6>
         </div>
     </div>
     <div class="newsContainer">
         <h2>جدیدترین ها در اخبار ورزش</h2>
         <div class="newsSections">
-            <div>
-                <img src="https://s3-alpha-sig.figma.com/img/3566/f650/9e2066f973335f384c09fa18727f63b1?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OmjNZGV9-u0Y75duaTJf5b5SHsZMgisqNPfzfrmyhqmEXmx9kldms1~JU0f65Q5tGdGMGEhBkMJ9dUBd-BDmCXFvbBMXEexi9f0skXy64BM2IhjXhtNwaAVaOG4krk1V~dcKvkpHTq35A8fe5nyc~Mmga4nu6I44K72QR5omcNIS7QzhwFOLEo4nTUsm7JhD7heTwUa-JhVStUB9zq8U-DUe652gnhpDWnPzcMjzpLewYTq~qd0M9hUNbmv27X7bEUS3-5WoRSJvGXlTaGNfbUNHMRUwnIFy~hmFIFGMFwxG2ta2B7UzlZ20ZeIcPFRvcbbeu8xoYl6waiFJTZzKdQ__" alt="">
-                <h3>افزایش دریافتی فوتبالیست ها و معافیت از سربازی </h3>
-                <p>خبرها حاکی از آن است که رییس فدراسیون فوتبال اعلام کرد در فصل جاری قرار داد هر بازیکن فوتبال 50 درصد افزایش پیدا میکند همچنین وی گفت...</p>
-                <button>مشاهده خبر</button>
+            <div class="newsSection">
+                <div class="sportNewsImage1"></div>
+                <div class="newsSectionInfo">
+                    <h3>افزایش دریافتی فوتبالیست ها و معافیت از سربازی </h3>
+                    <p>خبرها حاکی از آن است که رییس فدراسیون فوتبال اعلام کرد در فصل جاری قرار داد هر بازیکن فوتبال 50 درصد افزایش پیدا میکند همچنین وی گفت...</p>
+                    <div class="buttonStyle newsSectionButton">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z" fill="white"/>
+                            <path d="M15.5 12.75H9.5C9.09 12.75 8.75 12.41 8.75 12C8.75 11.59 9.09 11.25 9.5 11.25H15.5C15.91 11.25 16.25 11.59 16.25 12C16.25 12.41 15.91 12.75 15.5 12.75Z" fill="white"/>
+                            <path d="M11.4975 15.7504C11.3075 15.7504 11.1175 15.6804 10.9675 15.5304L7.9675 12.5304C7.6775 12.2404 7.6775 11.7604 7.9675 11.4704L10.9675 8.47043C11.2575 8.18043 11.7375 8.18043 12.0275 8.47043C12.3175 8.76043 12.3175 9.24043 12.0275 9.53043L9.5575 12.0004L12.0275 14.4704C12.3175 14.7604 12.3175 15.2404 12.0275 15.5304C11.8775 15.6804 11.6875 15.7504 11.4975 15.7504Z" fill="white"/>
+                            </svg>
+                        <button>مشاهده خبر </button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="https://s3-alpha-sig.figma.com/img/5f03/8f70/8d15a72d674d112df9f97509710ca576?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KPgsuKaz-nCdEEoXNs5RZKH9JS9PlTAoqrDOOsoWINFbHlHN9uBFGAIOwdUDTaLZZT2TPGycii6SkJZ2jpBAVctbC-2kb9KK3hmMhMwOoStTxqdOlknYAIy2jaHdTO~VR2nQpDLwNjTYEZ7DY3ziN8ddtPeTBv66Irj7vAPbB4xiBvPEGoHLASX67~Qk3HZ0qc3e5uC6NinylIUMJf8tFhF9rvqmArYHW5gL3fpipOL737cf0kna4K7Q5YBv8WXt1PXa8a3d1l-W18P63hSfcF1t6kCJ4GRB6H2Nb1~8vX40OjmImmcqTlnIo4hV7Pi7ZKNi9otDb7jgF73GzFiSCw__" alt="">
-                <h3>شکست استرالیا در گام نخست جام جهانی فوتبال زنان!</h3>
-                <p>تیم‌ها در روز اول مسابقات جام جهانی فوتبال زنان در شهر مادرید اسپانیا با یکدیگر به رقابت پرداختند.</p>
-                <button>مشاهده خبر</button>
+            <div class="newsSection">
+                <div class="sportNewsImage2"></div>
+                <div class="newsSectionInfo">
+                    <h3>شکست استرالیا در گام نخست جام جهانی فوتبال زنان!</h3>
+                    <p>تیم‌ها در روز اول مسابقات جام جهانی فوتبال زنان در شهر مادرید اسپانیا با یکدیگر به رقابت پرداختند.</p>
+                    <div class="buttonStyle newsSectionButton">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z" fill="white"/>
+                            <path d="M15.5 12.75H9.5C9.09 12.75 8.75 12.41 8.75 12C8.75 11.59 9.09 11.25 9.5 11.25H15.5C15.91 11.25 16.25 11.59 16.25 12C16.25 12.41 15.91 12.75 15.5 12.75Z" fill="white"/>
+                            <path d="M11.4975 15.7504C11.3075 15.7504 11.1175 15.6804 10.9675 15.5304L7.9675 12.5304C7.6775 12.2404 7.6775 11.7604 7.9675 11.4704L10.9675 8.47043C11.2575 8.18043 11.7375 8.18043 12.0275 8.47043C12.3175 8.76043 12.3175 9.24043 12.0275 9.53043L9.5575 12.0004L12.0275 14.4704C12.3175 14.7604 12.3175 15.2404 12.0275 15.5304C11.8775 15.6804 11.6875 15.7504 11.4975 15.7504Z" fill="white"/>
+                            </svg>
+                        <button>مشاهده خبر </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -392,7 +473,7 @@
                 </div>
             </div>
         <div class="footerInfoLeft">
-            <p>برای دریافت تخفیف های بیشتر ما را دنبال کنید!</p>
+            <p class="footerText">برای دریافت تخفیف های بیشتر ما را دنبال کنید!</p>
             <div class="footerIcons">
                 <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.7114 5.24359C25.5536 3.66846 25.2115 1.92896 23.9539 1.01368C22.9784 0.304159 21.6978 0.278148 20.5023 0.27933C17.9744 0.281696 15.4465 0.284068 12.9186 0.286433C10.4874 0.288798 8.0562 0.291155 5.62501 0.29352C4.60923 0.29352 3.62224 0.213109 2.67902 0.663653C1.86824 1.05152 1.23481 1.78825 0.854753 2.60774C0.324982 3.74888 0.213284 5.04021 0.149942 6.30197C0.0324712 8.59844 0.0451475 10.902 0.186804 13.1961C0.289303 14.8718 0.550717 16.7224 1.8118 17.7902C2.93008 18.7363 4.50787 18.7824 5.95668 18.7836C10.5588 18.7871 15.1609 18.7907 19.763 18.7954C20.3526 18.7954 20.9688 18.7848 21.57 18.7174C22.7539 18.5861 23.8814 18.2384 24.6415 17.3385C25.4085 16.4315 25.6054 15.1674 25.7229 13.9719C26.0062 11.0723 26.0027 8.14198 25.7114 5.24359ZM10.257 13.6041V5.47064L17.1176 9.53737L10.257 13.6041Z" fill="white"/>
@@ -410,29 +491,31 @@
                     <path d="M19.3779 7.64238C20.2451 7.64238 20.951 6.93642 20.951 6.06924C20.951 5.20205 20.2451 4.49609 19.3779 4.49609C18.5107 4.49609 17.8047 5.20205 17.8047 6.06924C17.8047 6.93642 18.5107 7.64238 19.3779 7.64238Z" fill="white"/>
                     </svg>
                 </div>
-            <p>خبرنامه فیت‌لند</p>
-            <div>
+            <p class="footerText">خبرنامه فیت‌لند</p>
+            <div class="footerSubmit">
                 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12.0391 15.1237H4.95573C2.37031 15.1237 0.882812 13.6362 0.882812 11.0508V6.09245C0.882812 3.50703 2.37031 2.01953 4.95573 2.01953H12.0391C14.6245 2.01953 16.112 3.50703 16.112 6.09245V11.0508C16.112 13.6362 14.6245 15.1237 12.0391 15.1237ZM4.95573 3.08203C2.9299 3.08203 1.94531 4.06661 1.94531 6.09245V11.0508C1.94531 13.0766 2.9299 14.0612 4.95573 14.0612H12.0391C14.0649 14.0612 15.0495 13.0766 15.0495 11.0508V6.09245C15.0495 4.06661 14.0649 3.08203 12.0391 3.08203H4.95573Z" fill="#868686"/>
                     <path d="M8.32483 8.30788C7.72983 8.30788 7.12775 8.12371 6.66734 7.7483L4.45025 5.97746C4.22358 5.7933 4.18109 5.46038 4.36525 5.23371C4.54942 5.00704 4.88234 4.96455 5.10901 5.14871L7.32608 6.91955C7.86442 7.35163 8.77816 7.35163 9.3165 6.91955L11.5336 5.14871C11.7603 4.96455 12.1003 4.99996 12.2773 5.23371C12.4615 5.46038 12.4261 5.80038 12.1923 5.97746L9.97525 7.7483C9.52192 8.12371 8.91983 8.30788 8.32483 8.30788Z" fill="#868686"/>
                     </svg>                    
-                <input type="text" placeholder="ایمیل خود را وارد کنید...">
-                <button>ثبت</button>
+                <input class="footerSubmitInput" type="text" placeholder="ایمیل خود را وارد کنید...">
+                <div class="buttonStyle footerSubmitButton">
+                    <button>ثبت</button>
+                </div>
             </div>
         </div>
     </div>
         <div class="footerInfoDown">
             <div class="footerIndoDesc">
-                <p>فروشگاه اینترنتی فیت‌لند</p>
-                <p>فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را به صورت حرفه ای آغاز کرد و با هدف ارائه جدیدترین محصولات ورزشی از قبیل لوازم فوتبال، فوتسال، والیبال، بسکتبال، تنیس و... همچنین پوشاک ورزشی و تجهیزات سفر، از برند های معتبر دنیا در محیطی کاربرپسند، قابل اطمینان و با مجربترین مشاوران و کارشناسان ورزشی فعالیت می کند. فروشگاه فیت‌لند دارای نماد اعتماد از وزارت صنعت معدن و تجارت می باشد و تمامی محصولات خود را با 7 روز ضمانت بازگشت همراه با گارانتی اصالت و سلامت فیزیکی، با سریع ترین روش های ارسال به سراسر ایران در اختیار مشتریان خود قرار می دهد.</p>
+                <p class="footerText">فروشگاه اینترنتی فیت‌لند</p>
+                <p class="footerText footerTextAbout">فروشگاه لوازم ورزشی فیت‌لند در سال 1403 کار خود را به صورت حرفه ای آغاز کرد و با هدف ارائه جدیدترین محصولات ورزشی از قبیل لوازم فوتبال، فوتسال، والیبال، بسکتبال، تنیس و... همچنین پوشاک ورزشی و تجهیزات سفر، از برند های معتبر دنیا در محیطی کاربرپسند، قابل اطمینان و با مجربترین مشاوران و کارشناسان ورزشی فعالیت می کند. فروشگاه فیت‌لند دارای نماد اعتماد از وزارت صنعت معدن و تجارت می باشد و تمامی محصولات خود را با 7 روز ضمانت بازگشت همراه با گارانتی اصالت و سلامت فیزیکی، با سریع ترین روش های ارسال به سراسر ایران در اختیار مشتریان خود قرار می دهد.</p>
             </div>
             <div class="footerInfoLogosContainer">
-            <div >
+            <div class="footerInfoLogos">
                 <img src="https://s3-alpha-sig.figma.com/img/5be2/8e1f/b7579a123e3c54bc614ed2b83758f086?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UCI4K~wbSjJpu6OcA-aQnb6Q48snTChOpqvCey03EDIov2K61JvIR8xeiM4smeZfu-4Jc~5R7rsmBl9TRht7~CRn~Pvg0jiRP4o6-FZasgntSUheQYRLWIC-D5RAM-PrlwVASLNc5nyiu4v~O84OtbUW1l4VmPXiKDS5MjEJDKv9MiK3u9qrWMKqyCznLXJ1gvEpjW51J2FzBpd2sUPyuUkvsJeH3C8SLm2nrOFqYRWv0WfoUzaHsh3VRxHn4CWITWBpFkiU3fQnLHpO27CkkU3-95b6PEZ3yHXlh74FhNG1ZHyQHyVyosoqW5qghOtvWZv8WD7NjApo8Pu~JmFlTA__" alt="">
                 <img src="https://s3-alpha-sig.figma.com/img/e488/e9fb/2220878a4f48ab0f0794fdbba2546eb1?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=jCSCEJcKNQfD6SbzD8eUsdR3gsA4mwp4mUT1NDMcVccwDNzAU6fwfz-nQxJcdNW6R5dWNYZuSDLfD1-OJDjK09D6-jkVPwn5hhqeNjdwbS5vUHLiPKzFFSc6~60fBXnLXGUCeOG6UIzhze~HZMGAUBFW0SzqhfdPDa373Za2YPZ78sRLYnZ0a2ONXgkQQo9R30nHUtoSUDEM3oJThlVO2HFrQL1neh03V63frw6-yAL4yKfgVBhPQOtEs1NBPNh91phelMKswTxv4PGBlmmy0Gmd~pEcX4hUrIgsostuaza1dk6ksvHjgnbbq2P42qM0tRBCRzqXkme9z8KAbhY9gw__" alt="">
                 <img src="https://s3-alpha-sig.figma.com/img/a721/e7e0/d4599ac39f689fccfc571f0bb6e83ddb?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=W~Dp7zHVZ366--JL5CemqMYAj6ZwFNubNOmR~tF96g4p6O6l-aoQzaCYzykeyZk0kiUbG2yyJE4e00gfsQ5zXiWGyO0aCcQnF7BDcwLAKRQ9hGeKwr2eKB-TwAV4VakbcKHkrOYT2IJiY79rfmPjRXB~igWLJ8bKrEKEFblbchttic812hqObOvlC7hHQgcG71k1UPng-2XrGQQm5paKUgQbO8GQIEPd7jvaZdvIrJOhTYohA0uO6Oo5kAKndiPOb46oANT8L9ef5qKHWYQXX~MPIqe7xHkssc4qCVDYaNcH-nJfDk9is~170T0zZYuVIZvq95nGgqjdXOZxyMLBdA__" alt="">
             </div>
-                <p>یک هفته ضمانت بازگشت ✍</p>
+                <p class="footerText">یک هفته ضمانت بازگشت ✍</p>
             </div>
     </div>
     <div class="footerCopyrightSection">
@@ -443,7 +526,7 @@
                 <path d="M7 9.47852C6.76083 9.47852 6.5625 9.28018 6.5625 9.04102V7.29102C6.5625 7.05185 6.76083 6.85352 7 6.85352C7.23917 6.85352 7.4375 7.05185 7.4375 7.29102V9.04102C7.4375 9.28018 7.23917 9.47852 7 9.47852Z" fill="#ADADAD"/>
                 </svg>
                 
-            <p>تمامی حقوق مادی و معنوی این وب‌سایت برای مجموعه فیت‌لند محفوظ می‌باشد.</p>
+            <p class="footerText">تمامی حقوق مادی و معنوی این وب‌سایت برای مجموعه فیت‌لند محفوظ می‌باشد.</p>
         </div>
         <div>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -455,7 +538,7 @@
                 <path d="M3.5 10.3548C3.26083 10.3548 3.0625 10.1565 3.0625 9.91732V7.58398C3.0625 7.34482 3.26083 7.14648 3.5 7.14648C3.73917 7.14648 3.9375 7.34482 3.9375 7.58398V9.91732C3.9375 10.1565 3.73917 10.3548 3.5 10.3548Z" fill="#ADADAD"/>
                 <path d="M11.0859 13.2702H7.58594C6.17427 13.2702 5.39844 12.4943 5.39844 11.0827V2.91602C5.39844 1.50435 6.17427 0.728516 7.58594 0.728516H11.0859C12.4976 0.728516 13.2734 1.50435 13.2734 2.91602V11.0827C13.2734 12.4943 12.4976 13.2702 11.0859 13.2702ZM7.58594 1.60352C6.66427 1.60352 6.27344 1.99435 6.27344 2.91602V11.0827C6.27344 12.0043 6.66427 12.3952 7.58594 12.3952H11.0859C12.0076 12.3952 12.3984 12.0043 12.3984 11.0827V2.91602C12.3984 1.99435 12.0076 1.60352 11.0859 1.60352H7.58594Z" fill="#ADADAD"/>
                 </svg>                
-            <p>طراحی شده توسط گروه 8 دوره طراحی رابط کاربری احسان عزتی</p>
+            <p class="footerText">طراحی شده توسط گروه 8 دوره طراحی رابط کاربری احسان عزتی</p>
         </div>
     </div>
     </footer>

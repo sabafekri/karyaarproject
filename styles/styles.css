@@ -2,36 +2,58 @@
     margin: 0;
     padding: 0;
     font-family: "Vazirmatn", sans-serif;
+    box-sizing: border-box;
 }
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: calc(98vw - 216px);
-    padding: 0 108px;
+    /* width: calc(98vw - 216px); */
+    width: 100%;
+    /* padding: 0 108px; */
     gap: 40px;
+    overflow-x: hidden;
 }
 .tagline {
     background-color: #032340;
     width: 100vw;
     height: 40px;
+    /* width: 100%; */
     color: #FFFFFF;
     font-size: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 108px;
 }
 .headerInfo {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 30px;
+    padding-bottom: 30px;
+}
+.headerSearch {
+    width: 638px;
+    height: 48px;
+    border-radius: 16px;
+    border : solid 1px #CBCBCB;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 16px;
+}
+.headerSearch input {
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 .logoInfo {
     display: flex;
@@ -51,6 +73,7 @@ header {
     border-radius: 12px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 }
 .headerLeft {
@@ -64,14 +87,18 @@ header {
     font-size: 16px;
 
 }
-.loginIcon {
+button , li, svg {
+    cursor: pointer;
+}
+/* .loginIcon {
     width: 24px;
     height: 24px;
+    cursor: pointer;
 }
 .cart {
     width: 48px;
     height: 48px;
-}
+} */
 .mainMenuBar {
     width: 100%;
     display: flex;
@@ -79,7 +106,6 @@ header {
     border-radius: 16px;
     justify-content: space-between;
     padding: 16px;
-
 }
 .mainMenu {
     display: flex;
@@ -100,6 +126,7 @@ header {
 .introduction {
     display: flex;
     justify-content: space-between;
+    padding: 0 108px;
 }
 .introductionInfo {
     display: flex;
@@ -123,10 +150,26 @@ header {
     font-size: 16px;
     font-weight: 700;
 }
-.arrowIcon {
-    width: 23px;
-    height: auto;
+p {
+    color: #606060;
+}
+h2 {
+    color: #021526;
+}
+h1 {
+    color: #FA541C;
+}
+.price {
+    font-size: 14px;
+}
+.size {
+    font-size: 12px;
+}
+.popularProductsItems {
     color: #FFFFFF;
+}
+.off {
+    color: #FA541C;
 }
 .hero {
     width: 422px;
@@ -135,12 +178,15 @@ header {
 .introductionLeft {
     display: flex;
     flex-direction: column;
-
+    align-items: start;
+    gap: 16px;
 }
 .achievements {
     display: flex;
     justify-content: center;
+    gap: 16px;
 }
+
 .background {
     width: 100vw;
     margin-top: -150px;
@@ -159,7 +205,7 @@ header {
     display: flex;
     align-items: end;
     border-radius: 16px;
-    overflow: hidden;
+    overflow: hidden; 
 }
 .newProductsItems1 {
     background-image: url("./assets/women clothes.png");
@@ -213,6 +259,7 @@ header {
     flex-direction: column;
     gap: 32px;
     align-items: start;
+    color: #01070D;
 }
 .newsBaner {
     align-items: start;
@@ -221,9 +268,9 @@ header {
 color: white;
 padding-right: 420px;
 padding-top: 80px;
-width: 409px;
+width: 809px;
 }
-.newsBanerText h2 {
+.newsBanerText h3 {
     font-size: 32px;
     font-weight: 400;
 }
@@ -243,7 +290,23 @@ width: 409px;
     gap: 24px;
     width: 100%;
 }
-.shoesButton , .offsalesbutton , .specialOffButton {
+
+/* .colorOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.colorCircles {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px black solid;
+    cursor: pointer;
+}
+.colorCirclesBlack {
+    background-color: #01070D;
+} */
+.shoesButton , .offsalesbutton , .specialOffButton , .newsSecionButton {
     background-color: transparent;
     align-self: flex-end;
 }
@@ -261,7 +324,10 @@ width: 409px;
     background-repeat: no-repeat;
     background-position: top;
 }
-.sales div , .shoes div , .bikeSales div {
+.bikeSales {
+    flex-direction: column;
+}
+.salesDiv , .shoesDiv , .bikeSalesDiv {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -287,12 +353,15 @@ width: 409px;
 }
 .sales3 {
    background-image: url("https://s3-alpha-sig.figma.com/img/c08f/cdce/2b079525b9dea0ac910f16d0731a1aa2?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZmUoqfzrFXLjDicGBKI3628P6LvV92qf1H9bdy53d~B7xnx5GqDpgIX9nGZK9lw9kVQovGmYDXdCjGd7zvL7z7CQ5wQoi8EsCuulKAQJWCintl5viEhLyKWcLhhxFtpHOis8i4yw0wGlM71RmmTG9xMD-NmcHLHNzzCur1U1bfV~yDESsPbU5-qY6JTxddbk-IXUictpVknOePAxq6ZSwYasZI4D2UZLXS-fHfjavAdOrgulptaDV2mVXK4cWG8ulPX~wd1me5JxmoTiynlhaTX9SlS1--jW9itunjUyCoPJ-p6-uBC1c9buTfbTqJbHHFmF6NZrtt9b0pdRrFSiLQ__");
+    background-position: center -40px;
 }
 .shoes1 {
     background-image: url("https://s3-alpha-sig.figma.com/img/7c48/9c85/7c19a9d9167b406f35fdbf826d2b1b8a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Xvp4S~JycmIwjENhfhpSAt7WPpNV4gbuMCKsOP6R37Cs2vjFeTknZnZcm--sV-xvGNLgX2oludhFSLJKSxkuqAyePZH3z8rJgnkmyKWB6sTWfDI8K46zLKiGz11N4xLtzNds19ckEHa49Yw26LDDHVtCUr1nXpvWD7UvL9ihZAfVRs2oY2TUh4a3HHM57b~-IomRYKV9nq60YWigQpB8wfFkN~OvNzxg0SzOOcfNA1YFKGivvNaFGGeuR5-PQrAJ808FooV1nCGPnyEM-PedkbY9YoZ-wG5WOsmeHqjMTHLRwOMOJuC6DZUqdikQEOnB4IfkMKWtqvt~ERPXKPWxEQ__");
+    background-position: center -40px;
 }
 .shoes2 {
     background-image: url("https://s3-alpha-sig.figma.com/img/c08f/cdce/2b079525b9dea0ac910f16d0731a1aa2?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ZmUoqfzrFXLjDicGBKI3628P6LvV92qf1H9bdy53d~B7xnx5GqDpgIX9nGZK9lw9kVQovGmYDXdCjGd7zvL7z7CQ5wQoi8EsCuulKAQJWCintl5viEhLyKWcLhhxFtpHOis8i4yw0wGlM71RmmTG9xMD-NmcHLHNzzCur1U1bfV~yDESsPbU5-qY6JTxddbk-IXUictpVknOePAxq6ZSwYasZI4D2UZLXS-fHfjavAdOrgulptaDV2mVXK4cWG8ulPX~wd1me5JxmoTiynlhaTX9SlS1--jW9itunjUyCoPJ-p6-uBC1c9buTfbTqJbHHFmF6NZrtt9b0pdRrFSiLQ__");
+    background-position: center -40px;
 }
 .shoes3 {
     background-image: url("https://s3-alpha-sig.figma.com/img/74c0/f629/0db6eab4cf009c7370ef255ddeb14a94?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=rrGCJIQRQNBOtW90~OxkUcTw2Ce0~lUQAWaBUxxRql39VQkfNpX6aHHKwIoBiVwFqKHYqk-LeoUGqw69P83uln0t3Q5ilyc8sOABC77Xs5utmyahZ7tBMu6AxRSzp4FoofyslyAWCQ8GEKFxGWjxU7MTRcF7GJWGE4AwYhj~fUntDo0ujM9kPxV~JNpvrJGqe-tmx4l9wJNnZXV4-~AWV5LvxNTqGI-ZHOwL25EGWRjWBCz1ae5mN3mb1pwXwcLdRCDACqzXIhxfc08Crn9x2PuxdcurhUqIsxa7AUOwwR4GRoPa-uM9LopxDlQsTumnGgPMAZrCWGgzooaZ9uWr0A__");
@@ -302,12 +371,21 @@ width: 409px;
 }
 .bikeSales1 {
     background-image: url("https://s3-alpha-sig.figma.com/img/6a28/7f14/00e07499ab978151e56224380c986e78?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=G4usfPiy2a6wDVejRPiMmHRm6zrI1hIISBoPbt2ru3WCGryvwCjAx-kAeMJVyfNc39~IY5gMrcI8FwTA~LXQC-c2AZFvakvuFhrwKJfTPbstynZFaznnBbMZmgAprEhBJdo-8hGtSltZUjMdMUluvU6BlIR1YzkTGClx~BOHxHVCRoVLjUpXCcPb0Kva~30RWQESCYbmz4vyOFgzpKjqd9D~rdv2GFChKSzd4yk-e5PlnctNnxfoQgPzXDV1sov0UOYMZ30zHUDCGZAXVJD31BMa1-qUQvy1aaq~Xw5~to~JsGjUNUl6R~yMWqqLNu-tPDgjo~UWdX7Ge2YLseLW1A__");
+    width: 366px;
+    height: 280px;
+    background-size: cover;
 }
 .bikeSales2 {
     background-image: url("https://s3-alpha-sig.figma.com/img/0ab5/81e4/ea559fc4e560a4e976cd06b820a70086?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=H7TxuxPdpKsrA2ONyp-cv~lPYYNiPBMiOCZ~OIx9tunn-~J-HQa2SfXZlTA2YP~DnWEJ6l~UXnMa13NT2YPW7IYj1sG-O4AkhbiOWPykGAcxlPb4NHXzed8klPN7j8druq1LxOCQsUX5Tu4nDU5GbzMSgyQI6YMk~OU9ojnpVXsKESNBI5UUtkq2VopN1~aqhdETqtGN4u-vZbIFHDsmXlJ6l7tZGScV847E23xtICXNOB4vY4d7~ZOaMxWwRks-aeOg6vi2ATEigSb36SUi~UDVfavbi8hvzWPIv0f4~gSs7UmCn4XXiQlqnvC9KEcsC3VhUNcQ-eAxAYTEbPi5aA__");
+    width: 366px;
+    height: 280px;
+    background-size: cover;
 }
 .bikeSales3 {
     background-image: url("https://s3-alpha-sig.figma.com/img/cec0/1461/8736428cf5c7dda14f0b84024d6bc3ac?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=J0m8dGoURvLjmKUPJioBdkErx1YSDfPZqvXK4XkDuovSV4VZiO-s~y-TpBbKosRRRftgg0awULNY~x3JRIU0mzF5D~3tQTg6Cz~0c3J-QedhJr1q7ixDILca8uRf41VT1U-Iuy5777FXL3hqbgmNpQFGklOe~VRGOD25ETgNeQrA4G5u6uohU3trUd35ZKgWAexbi3VDwsdqd224QUtfSIWA8PmU0jIj2Jm8IcUm4hTqXjm2jXhtFS3ZysekY2m2VP6BbbGPXV-Yg9AdJ59w4pz~FPXiKlAsodB~HWJPplN9RUcm97lr85ipa-11QRvVs1tAElDhDrXA~zGsyE5VBw__");
+    width: 366px;
+    height: 280px;
+    background-size: cover;
 }
 .popularProducts1 {
     background-image: url("https://s3-alpha-sig.figma.com/img/cbab/fbec/70fb9396652a1e542d144dceaa7f3779?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=doGx45kdJhZ6Ryt4vPW3PpadM10~bWvPpu5GcpbnBKM~D3d-9DF7RBQu1wUE1GkFVsT4NSZWI7x0q5s0QnQn8Xx~ri3BV4~e5kkdOjTUPN~MGFPa~tCZF5H1jmuaApfkR6aIyCDEg5a0MCUnW~UbW2r7qu06-TyOTXLtLk8hDUjxa2fcgEZqo0~C6ZIRmlS4HZ8k97pPCp8~Okrg0cjDqhJMeblyhVtOJ9bxAdxzB36u1Sr9Y6U3ZPPt3hMg651mDPMqULJKi~Xkwjt1Hl7kuMlvb2t2qz9iSOoY3jKmTZKJg0zzUJCRtXhApm2QoF1grLUaaL01zk27tLt1PkcVKQ__");
@@ -327,25 +405,68 @@ width: 409px;
 .popularProductsText p{
     width: 309px;
 }
-.popularProductsButton {
+.popularProductsButton , .newsSectionButton , .footerSubmitButton {
     background-color: #FA541C;
     width: 309px;
 }
+.footerSubmitButton {
+    width: 50px;
+    height: 24px;
+    border-radius: 4px;
+}
+.footerSubmitInput {
+    height: 24px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #868686;
+    padding-right: 4px;
+}
+.newsSectionButton {
+    width: 163px;
+}
+.newsSecionButton button {
+    font-size: 16px;
+}
+.newsSectionInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 16px;
+    gap: 16px;
+}
 .newsBaner {
     background-image: url("https://s3-alpha-sig.figma.com/img/c743/d095/1557c3c163f15681dfb206b40ac4ea25?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Q3XknLqzm6rI9gZpbpJ9ZONdVGRJNpcakYZQ-QnSINnvIUf4uzcMuwD~cRR4PHISgLkpNVYVWIbi5lVFUioSWGMyZJC4~YTyjaiLcSv38gIO7B9zbo3fRjTLQ3gLgpSlY9S6RMycmyBVGlgFbCLSNEsCMNOYELFDA6zdS1q6qzoo3~hgZjEoTIGs56nIQMshQwGh05iUz6-H4m5pWw6DI9U6LYxTPl02r9VvWFN-9Aa~W6Cb8KhthC4LF1P0LgJ5bD4HKJ425kyN-nuS-Gj6uDbFzNNFSta~JtnLfWUSTraljCqKf6lWkEyXpTYQub9~BITAxukhqZFcXDTTzFmzhA__");
+}
+.sportNewsImage1 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/3566/f650/9e2066f973335f384c09fa18727f63b1?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OmjNZGV9-u0Y75duaTJf5b5SHsZMgisqNPfzfrmyhqmEXmx9kldms1~JU0f65Q5tGdGMGEhBkMJ9dUBd-BDmCXFvbBMXEexi9f0skXy64BM2IhjXhtNwaAVaOG4krk1V~dcKvkpHTq35A8fe5nyc~Mmga4nu6I44K72QR5omcNIS7QzhwFOLEo4nTUsm7JhD7heTwUa-JhVStUB9zq8U-DUe652gnhpDWnPzcMjzpLewYTq~qd0M9hUNbmv27X7bEUS3-5WoRSJvGXlTaGNfbUNHMRUwnIFy~hmFIFGMFwxG2ta2B7UzlZ20ZeIcPFRvcbbeu8xoYl6waiFJTZzKdQ__");
+    background-position: center;
+    background-size: cover;
+    width: 564px;
+    height: 307px;
+}
+.sportNewsImage2 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/5f03/8f70/8d15a72d674d112df9f97509710ca576?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KPgsuKaz-nCdEEoXNs5RZKH9JS9PlTAoqrDOOsoWINFbHlHN9uBFGAIOwdUDTaLZZT2TPGycii6SkJZ2jpBAVctbC-2kb9KK3hmMhMwOoStTxqdOlknYAIy2jaHdTO~VR2nQpDLwNjTYEZ7DY3ziN8ddtPeTBv66Irj7vAPbB4xiBvPEGoHLASX67~Qk3HZ0qc3e5uC6NinylIUMJf8tFhF9rvqmArYHW5gL3fpipOL737cf0kna4K7Q5YBv8WXt1PXa8a3d1l-W18P63hSfcF1t6kCJ4GRB6H2Nb1~8vX40OjmImmcqTlnIo4hV7Pi7ZKNi9otDb7jgF73GzFiSCw__");
+    background-position: center;
+    background-size: cover;
+    width: 564px;
+    height: 307px;
 }
 .newsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 24px;
 }
 .newsSections {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 48px;
 }
-.newsSections div {
+.newsSection {
     width: 564px;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 .newsSections img {
@@ -364,6 +485,9 @@ width: 409px;
 }
 .experienceSection p {
     width: 358px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #032340;
 }
 .experienceSection img {
     width: 167px;
@@ -375,14 +499,38 @@ footer {
     font-size: 14px;
     width: 100vw;
 }
+footer img {
+    cursor: pointer;
+}
+.footerText {
+    color: #F9F9F9;
+    font-size: 14px;
+}
+.footerTextAbout {
+    font-size: 12px;
+}
 .footerInfo {
     display: flex;
     gap: 80px;
     justify-content: space-between;
+    padding: 72px 108px;
 }
 .footerInfoRight {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
+}
+.footerInfoRight div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.footerInfoRight ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 16px;
 }
 .footerInfoLeft {
     display: flex;
@@ -392,6 +540,7 @@ footer {
 .footerInfoDown {
     display: flex;
     justify-content: space-between;
+    padding: 36px 108px;
 }
 .footerIndoDesc {
     display: flex;
@@ -399,7 +548,16 @@ footer {
     width: 650px;
 }
 .footerIcons {
+    display: flex;
     gap: 32px;
+}
+.footerSubmit {
+    border: solid 1px #868686;
+    border-radius: 8px;
+    padding: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .footerInfoLogosContainer {
     display: flex;
@@ -409,18 +567,46 @@ footer {
     gap: 24px;
 }
 .footerInfoLogosContainer img {
-    width: 68px;
+    width: 67px;
     height: 80px;
+}
+.footerInfoLogos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
 .footerCopyrightSection {
     display: flex;
     justify-content: space-between;
     border-top: 1px #CBCBCB solid;
-    padding: 8px 0;
+    padding: 8px 108px;
 }
 .footerCopyrightSection div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+}
+
+.circles {
+    display: flex;
+}
+.circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: black;
+    margin-right: -5px;
+}
+.circle1 {
+    background-color: #000306;
+    z-index: 3;
+}
+.circle2 {
+    background-color: #CBCBCB;
+    z-index: 2;
+}
+.circle3 {
+    background-color: #01070D;
 }
