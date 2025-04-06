@@ -1,0 +1,47 @@
+.itemsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.items {
+    width: 288px;
+    height: 280px;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+}
+.item1 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/8fad/79ab/19168d3d8e3e254edb225847ecd506dd?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oee5A6LHtkFF3IXx-8ZPE0t4sPgJ4VhLcx1j8nQvRyJbNFlzvMAwOdCbWuDRB9PdN8A3~ss4PAe9s1KRR79CE6yqH4btUFLNE7mQwt6fGfGVkMd7cxfsttNYb4unROEo~QTzmUS5FgoAsDJR-GupDF91N3mjnokGQ-RQwIgEKYvbAl9Mcg380eK1ocScWV1lAN1gGkxxVvOGvD-PFt-iiqZuTkGVqqGZHbIM9GI9CASbImQt1fmEaB3P2zY4kqJZE9IVrEeh97M3mepiKX~vTLFq4jgfSab3sUPAfxD-eWdzntV0YFJx9hL4E1aNinxwVBpAhh7ziaH9oZYRqWcpuA__");
+}
+.item2 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/82ce/95a4/0fdc09e950acdbbd845da2e222c7e668?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=JZdgct-gWDGfx7iap-tK3zmZXUultpMz7XdtGz3geytfSxwvi9y~u-DGDoSLRo5XpIgb3HpSaOAIHtUy44xBMHGcDfpwQjeMHoWmojmGv6zWbd6bhuU714JJUp1C8Xv8sahRMaD5j~wddv9KG7uLGCNCp1yfLYi7oZ8w3yyXQC3pmmG7GRol5-~4ZFZVaiJtC~sRKaOV6U4mrm7bMuffV-zwmFwliUSQwWHl9unMtCS1~qhq9KAZmmgRyWhaF-ZDspbtlAfJFZ0sUn1DdGwnxq36x-LYUxfFhlH1lsfEFbcr6sLZ69-XGyyKvD9tl5EZNUsBw9gkX1PtfkXVJdcRRA__");
+}
+.item3 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/fb81/3af6/7d1f6fe13944e2448cda8fd12d853ff6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ddefcSWd8~YyeaUMuKR4cO7f~EHsD98um9d-4Bncpi~u07QbiJwwsYPVMHEYWjA8kydD4mlQDI4w-AttkB3vjJgYpM7fMJMtnyykA5FCSZUSvganCmsFzNp8bk3SlanNo1twXQ5oHRWnZPvDUJjSz7BKBuu~-~ErSDJaVubVxGZdw1gG3K8OSXlsdhdEw2RXl4Y6VxjsgM1sd0BX~1BqTdriVV41dxxb2p9hnoeE1CvVYK1z5Psz9C98sodjjGNt8-o-KYo0ApRiYkSkJwLdHCwBXJUrNzYm7zlzg2e2rdBpewRPujHa8ZjipcXC6-OrB9244AK9XLhzeFDd1sRvig__");
+}
+.item4 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/6c45/a796/61b18c088a76fd99d9f917d203040fa4?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Jvp9ldVGqL7Rc-vrgcu4n0X~QDUOHDfED2CzHP715DX00aX6osI1TBpE~0L3cOMqrlKryy9SSEGORlTh4vzf1VVaiPRclVRrUKQe4v4oryHW7y8TSGXvrfFDjpvwJIOgnapEyPB-XhTmylxj6VrXV-0aqx32DrI4ikZw8cmv9HH5Atp3Fqf3PM9kF8oQmB9ZRZNA3PKJ3aaiNdj77gyWnNTOJZfcnag--R7C2Fz28ArZFbDdHgpR6fZWSCpyo2iavjIPsNg4h9-~zzAJX4dM3ntJt9W9OeSG9XvpduCCAsAZ6lWHzZGyERxficr2vVl6sQ8whusxmbNf9iYCDNV8ig__");
+}
+.item5 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/4023/bb80/a82a0fd549c548dae6a2067384e281ac?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=uDlRrV7d1vbZzjC3pmmxOfopp4BIBnq69JCGwhn43WXRYeo7cjC90RlyeFvY2lYJC5nNqI40PB6MV-uveTAtV3k7JDkc6lZZJxV2v7eh7MGJF4D1aRC2OB1HODSP72bsfEwLqgkjwvUHkIVvMA5piOFaJX9-sY0UngmIS22l-IJ0yvWz4noDpYO0JGSMwkw~SqYoS9g6L-GNkTkh7vtQBkN7hyHS0P5n5-b5MMchY2WMVOWDCz48rHQaR0DBSr5zPVVErYX3MlCgmoYC1~WLhgCWkaANXqB61jUyTNXFMQsyPRfjJmjxpxgRieZz7Y042d7Pa2DX8i94EQm0LMvqWA__");
+}
+.item6 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/69b7/d897/a122002ccb394029dace1afc8518096f?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oC~0NxE7D4DeicrxpBIEcqQO1UqwPkSaJzoMOn88qOriMtb88BP5vfYpR~Zk63g~QZnDq9kcunSeBFhmlz6uiylX~rRlIXhisrMwcUHS5uu~QcxCC~hiMTAbkbsNqTsIHmZhNcTnOl-p2gx17tU04EB42WAvXvXjm-2g~D07F2Qvh4IlUflLzjnB4qsGirszmSrNVWk-QR~VgNr5TqNakJ0Ivf9P4v1EJKKGmjnfZl7jtagzNyzrsNffSakPknAsXwUf2netrUgE-9kK-6HEmHDL2r~kcHf9NBfTt7LCGFGxQOFvJieZvZdynk961kUMUwK7fEhFFmuBkTJeKg5w7A__");
+}
+.item7 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/2048/fe5b/b3ac3effa03181ac173215c9e38c3dd9?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ucXceQHBFDqEzjkiLQz7ijozUKGXAjWnIMRbXT7V6XwMAg-MBT3dOIoIcfcJZnWiyoguTxVORDfGqqENOQqjHbZ0lY5-TmssNDDdLGXJcOvEijeyVGAb2K~DfgSLGf~SelMeDMtsK943y7UXsao8ExmpVt6C3QPHlglujTAOP7ssNJT7Z1A3xJK~bwVaVic7PaeI4qQfXmrU644wNQ9SvrWOi4UaU-R~kTYhaHFHymAQOVkduQfxxxqwYFXy59csfj8bnxP01xt4fxaTG2tTYbWRZLrIRsYN0ez0QC9iFKIG105aU0TB7CmQW3aqvCxOcA14r4HflMUBKBi3BJktVA__");
+}
+.item8{
+    background-image: url("https://s3-alpha-sig.figma.com/img/c991/e02c/e12197bad5ac517e733c046c9d176d61?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Z6KRX17UQZvWk~d6ZaGwurmFci9cgiOwBg8RhQVji8jp-dNBhTKbjzwI76W2yDLnR2xS9zJIor-ilISEO4rDLua25aWHrLp4Jnn2a4-FSBwi-bUH3kC8bnKnbsM~lFMdMig00ifULLgbNc66Voc6krQGUdQ4doT~vZ1k0Z2E6jGx64sxJfUfu5dv9l6e5xsUQKW5QjyRO7I-fpSXXh6pIUHZUC-tGCKLOcqwnb7RA9oRW4NFxrbZv62axQiN~E9Qk3XQbPPHmpAeI00~cAQjAP5b94vN8gDOzgGoYaQJVf0VzX-Lb6xlu9rnD5pcRBtWpscjt5j90NgfdZryYBaFUg__");
+}
+.item9 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/9581/3f83/339072edf747e8e9e0d319bd0a4b5046?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=t~zaAoPhLlfS9ocn3I6yaCprqPC3FJ48VKXBFYl~B9vLwbfWYAG6p8rxCKK0tfX6AVpXAAXqumRnBXbIt771bcPppG4C-pVSCMd7IwK6kqyCeqp~BIE~f7Omcrpu42RknK3P7XnByBhmvoXh7he9tvnQ-5Qe7ikFD3HsomJ-Tk-C4Sp2GWHRe6kJUWFptmjQt8XS3FeEcTA~880Uzg0kCGsr5CRELDHODj-uf3uFaWba5LkduEt~TTMHfUuTXy0f-RZq9hQjyN3gdpIdlFElYAJzgQeuUvyltsuiLPhmyqbA9bJltW3W4NHqcrWplR6Rk0T8p8wrLPbznkv7677~9Q__");
+}
+.item10 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/12f6/4336/79c85c82703aba1d772edd5c404389ea?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=gpq~E4984yktoWyWwka~Jbrdrb~DZPSEtC16aVb~DDm8JdLvUBFo83NfbM8kCVvYsvpGvEQR4v~~Xc6sp8eCMN-N0dBfA6ltVcvXtDopBUc878NjHlkfq7TqaF1uJ1tzGNn6GVEsZtEBekcJubyazwTFOq47d2dKPLta~pXmPX1UvSn5dhgK7hwJJPEUti7gBepDUky4OzaQQk9ROXqfi7WF35dR~rdz8XhoykavFpAm6QhNg7poAMThp6sMRvRQh~jJsrmDmiK8NcFaRiYEK36aOd2YZOQFP6j4PH7~bnkuamW-ljbfQzo~LryoEKYHUX8sIlGtGkEoAkdwySEHbg__");
+}
+.item11 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/31f6/7730/af9f231fb283fff0cf01451b72d036b6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CfM5oMZI3MAsTYM-zdMd8vB-EASXEkjJf7YuZkTmjY-9YiPaEzD02tRLdsy3wu~7Uhjk85haLkZUp82XCfJ-FOQsYm1vbltlo06PYGNjBKUzDY9uY33tQ1L~zTYdbaLGRqayCHq8k5lokML~XW6R6MuHxb~5eUn4hnRRc4Ic6ddRD4Q6PkdNxe8hi4sTy~3VyCTBZBew8vyOAkoZeblJH6vrcGH5uW06~pdqifeh93OrWmc1Z93Ff2Toj511MuTR49W9olAnFiIlW2xwsq72v47o0l-YonLkiWKQ-wc1xwxwP0dlUUdqiKX4oxPihkPnkxzn5Z5iVciAKD2mt6cCBg__");
+}
+.item12 {
+    background-image: url("https://s3-alpha-sig.figma.com/img/8277/4be6/0c539d0ad5584cbb1778488786384a2a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UFhyl3M0Ju5PmiiN7Y1yVO8maxtTFAqC3o1V1y9C~nd~rcFDoyeLm27l0gRZIpCYf-4V4phr40UPUSLpAxgNgr0fHi5yOw733l5GsfpnDV~~xL5D~ROyhdjxszAfHmqQ8rrXAZbAsCSbdno7jHBo~NRZfSOXqfs0Gs12NidhZz9IAxhvL8I6lBgmSsSh~j8nVWRTb71HvRVo~RuMVtnxBEOwAl6qpxgB3-ef3PSN2RfRVKoNGN1f9hBI2BEXYx5sVQujK4ArKvC2lhgsIv~tQ3L3VRGTTVi6WxB4gguAosltdFh4amACglpMQS5RMBwAmmuuM3gA0JspFR-lpQ-q0g__");
+}
