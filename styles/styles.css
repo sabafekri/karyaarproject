@@ -64,6 +64,7 @@ header {
     width: 150px;
     height: 32px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 .loginContainer {
     width: 142px;
@@ -156,7 +157,7 @@ p {
 h2 {
     color: #021526;
 }
-h1 {
+h1 , .off , .contactInfo {
     color: #FA541C;
 }
 .price {
@@ -167,9 +168,6 @@ h1 {
 }
 .popularProductsItems {
     color: #FFFFFF;
-}
-.off {
-    color: #FA541C;
 }
 .hero {
     width: 422px;
@@ -291,21 +289,6 @@ width: 809px;
     width: 100%;
 }
 
-/* .colorOptions{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.colorCircles {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px black solid;
-    cursor: pointer;
-}
-.colorCirclesBlack {
-    background-color: #01070D;
-} */
 .shoesButton , .offsalesbutton , .specialOffButton , .newsSecionButton {
     background-color: transparent;
     align-self: flex-end;
@@ -436,6 +419,7 @@ width: 809px;
 }
 .newsBaner {
     background-image: url("https://s3-alpha-sig.figma.com/img/c743/d095/1557c3c163f15681dfb206b40ac4ea25?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Q3XknLqzm6rI9gZpbpJ9ZONdVGRJNpcakYZQ-QnSINnvIUf4uzcMuwD~cRR4PHISgLkpNVYVWIbi5lVFUioSWGMyZJC4~YTyjaiLcSv38gIO7B9zbo3fRjTLQ3gLgpSlY9S6RMycmyBVGlgFbCLSNEsCMNOYELFDA6zdS1q6qzoo3~hgZjEoTIGs56nIQMshQwGh05iUz6-H4m5pWw6DI9U6LYxTPl02r9VvWFN-9Aa~W6Cb8KhthC4LF1P0LgJ5bD4HKJ425kyN-nuS-Gj6uDbFzNNFSta~JtnLfWUSTraljCqKf6lWkEyXpTYQub9~BITAxukhqZFcXDTTzFmzhA__");
+    padding: 0;
 }
 .sportNewsImage1 {
     background-image: url("https://s3-alpha-sig.figma.com/img/3566/f650/9e2066f973335f384c09fa18727f63b1?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OmjNZGV9-u0Y75duaTJf5b5SHsZMgisqNPfzfrmyhqmEXmx9kldms1~JU0f65Q5tGdGMGEhBkMJ9dUBd-BDmCXFvbBMXEexi9f0skXy64BM2IhjXhtNwaAVaOG4krk1V~dcKvkpHTq35A8fe5nyc~Mmga4nu6I44K72QR5omcNIS7QzhwFOLEo4nTUsm7JhD7heTwUa-JhVStUB9zq8U-DUe652gnhpDWnPzcMjzpLewYTq~qd0M9hUNbmv27X7bEUS3-5WoRSJvGXlTaGNfbUNHMRUwnIFy~hmFIFGMFwxG2ta2B7UzlZ20ZeIcPFRvcbbeu8xoYl6waiFJTZzKdQ__");
