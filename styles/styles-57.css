@@ -1,9 +1,9 @@
-.profileContainer {
+.orderContainer {
     display: flex;
     justify-content: center;
     padding: 0 108px;
     gap: 24px;
-
+    width: 80%;
 }
 .profileInfo {
     display: flex;
@@ -102,4 +102,55 @@
     display: flex;
     align-items: center;
     gap: 5px;
+}
+.orderLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+    width: 100%;
+}
+.orderHistory {
+    width: 100%;
+    display: flex;
+    border: 1px solid #CBCBCB;
+    border-radius: 16px;
+    padding: 16px 32px;
+    gap: 32px;
+}
+.orderHistoriesNow {
+    background: #EBF5FF;
+    border-radius: 8px;
+    padding: 0px 8px;
+}
+.orderBoxContainer {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #CBCBCB;
+    width: 100%;
+}
+.orderBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    background: #EFF7F6;
+    width: 100%;
+}
+.orderBar {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+.orderImg {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+    overflow-x: scroll;
+}
+.orderImg img {
+    width: 135px;
+    height: 131px;
+    border-radius: 10px;
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/styles-57.css">
     <link rel="stylesheet" href="../styles/styles.css">
-    <link rel="stylesheet" href="../styles/styles-profile-49.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
@@ -107,7 +107,7 @@
             </div>
         </nav>
     </header>
-    <div class="profileContainer">
+    <div class="orderContainer">
         <div class="profileInfo">
             <div class="profileMainInfo">
                 <img src="../styles/assets/Profile photo.png" alt="">
@@ -125,36 +125,46 @@
                 </ul>
             </div>
         </div>
-        <div class="profileForm">
+        <div class="orderLeft">
             <div class="user">
                 <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="4" cy="4" r="4" fill="#404040"/>
                 </svg>
-                <h2> حساب کاربری</h2>
+                <h2> تاریخچه سفارشات</h2>
             </div>
-            <form>
-                <div>
-                    <label>نام و نام خانوادگی</label>
-                    <span>مهسا شیرین زبان</span>
+            <div class="orderHistory">
+                <span class="orderHistoriesNow">جاری 1</span>
+                <span class="orderHistories">تحویل شده 8</span>
+                <span class="orderHistories">مرجوع شده 2</span>
+                <span class="orderHistories">لغو شده 8</span>
+            </div>
+            <div class="orderBoxContainer">
+                <div class="orderBox">
+                    <div class="orderBar">
+                        <p>2 مهر 1403</p>
+                        <p>کد سفارش : 131313170</p>
+                        <p>مبلغ پرداخت شده : 1,800,000 تومان</p>
+                        <p>تخفیف :240,000 تومان</p>
+                    </div>
+                    <div class="viewOrder">
+                        <span>مشاهده سفارش</span>
+                    </div>
                 </div>
-                <div>
-                    <label>کدملی</label>
-                    <span>07822347</span>
+                <div class="orderImg">
+                    <img src="https://s3-alpha-sig.figma.com/img/4e8c/6d12/3df7ae3af4ac30b349d609fa260030b1?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OBdckLAJFS-l77lLCMRp~k-d45mnbm821VKCFXw8JHVynF~uV4lIQOKkCD8MRKmsFdFI69lOaM4iiq6NksvoiHdB7o4iK6LRTXZS3GEJMoGmzvP0CTYrg5Adt6uv716ydaM6sj5~V-WHj-l9s6JvLw33GnOi8i6x9cvYEIiiCfDy2QtaLzRONz199Cly5GHaY8WpKxUn6sYm4ifqCS0vZwirPLT6TqsBg7JUEWhet6lmBLKpXGdLoC-X6lf4XYALVx3Z7oWKbplrMTHsUfnAcV1-b-Lb5KrRRYIqfbwhzvToMqcbJ6At8VsNWR3gRu6ZnUlaBrjrXCRO3nMTXeWbMg__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/032a/49f9/ab9951b59b021bcfcc6ac42b52e059ac?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fAARR8MwHSK1yDtREyvt0N1PMUHRGI71Df-~A58YpDq0Gb2yirf3wc5Ac7FiSwZebjQS8r5zIsOlDtAR4ZfHfF9HjwR1AgM0PutbuAWipjLWoMzI-CQF4QMCFKk9Hsw6SYuEn2Kzs7zrT0Y35arNDLizxYnH5WDEErnQmAs4iwMIpP8oVjXU6enjBQVt2QTIncaR8WYC78XH6zz4msh1hI3hBSwphVM0eXL17TnDWO0zh-34u67czfHsacQiK5V1MoqbB6IVNvJk6fJvDiJ5WLqr-0UNv9s7HKbPB-Ce8ZjcRQ7g98r304a0EEBiblZjGp8aBbu0RHoXvvTof3Hkeg__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/4e8c/6d12/3df7ae3af4ac30b349d609fa260030b1?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OBdckLAJFS-l77lLCMRp~k-d45mnbm821VKCFXw8JHVynF~uV4lIQOKkCD8MRKmsFdFI69lOaM4iiq6NksvoiHdB7o4iK6LRTXZS3GEJMoGmzvP0CTYrg5Adt6uv716ydaM6sj5~V-WHj-l9s6JvLw33GnOi8i6x9cvYEIiiCfDy2QtaLzRONz199Cly5GHaY8WpKxUn6sYm4ifqCS0vZwirPLT6TqsBg7JUEWhet6lmBLKpXGdLoC-X6lf4XYALVx3Z7oWKbplrMTHsUfnAcV1-b-Lb5KrRRYIqfbwhzvToMqcbJ6At8VsNWR3gRu6ZnUlaBrjrXCRO3nMTXeWbMg__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/fcb1/a822/a675ca20464208f0ae52f4b39b4c62f6?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tZNU-9UMmumZ3BAOy1L0wUAKWx5lBbZGj5nFSfk9bpvYmBse~g1fgAPbqkHHcyYxEtt3Wds0ENcQHrkb4hUdlxBEKX0husBvVK5Pegkk-SIHoH3unVRmOs2iVhDPLUOH-k8Wo0x3I8D8WE8grcXkRQ9vOIoTWb3yFovbPqXbKcwzNv91~ZC5VnorEW6Xuu7oBC~RLazpiw4VEkYK1mygsA~hQ~ZeuNKc2bLVAXErRXrOaOovazqoNPv--RSG~Wscr5X4PYj-oSvDwGw1DFUr1FaNLQQPNf3RKqRRjqKU93IsciG-6AZCjkUvmxng3YKTzM-4R2kKvxXERux1kAHTJA__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/3f94/f2f7/f3aa3b1f8b3050858523ada936e1dd14?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fEdKm2LFHd1J7n6C7paeXX4KE1aiZMEiGWx2YttpI9Bw~Wb6Frke5P1gTdBaT4wnoe4UO45wjFH11nnNiOtBojxg83UNZ6affobyfXD5DDPz2X-x~Z6ob1U1Vbz86-9GXP1aKPU11zkqdUaIiueCvd8s3tJgF6gv2E6O86cCzh8J-w-scav0oylOeY42PHSqmFHdi2cFOXTswx4Fh25Y-RtmZJJP2XrsHxj~QnS0KvPwXqf3sAAWlpWyADrDMhAzagSJkdoNwqJoRUeYLVk7eJbmhefwRaQifIId~mlXfPekymHNwMZCFGDtEXguUSmBQOvy~ZW~xKN1~L-gUWWHwA__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/3f94/f2f7/f3aa3b1f8b3050858523ada936e1dd14?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fEdKm2LFHd1J7n6C7paeXX4KE1aiZMEiGWx2YttpI9Bw~Wb6Frke5P1gTdBaT4wnoe4UO45wjFH11nnNiOtBojxg83UNZ6affobyfXD5DDPz2X-x~Z6ob1U1Vbz86-9GXP1aKPU11zkqdUaIiueCvd8s3tJgF6gv2E6O86cCzh8J-w-scav0oylOeY42PHSqmFHdi2cFOXTswx4Fh25Y-RtmZJJP2XrsHxj~QnS0KvPwXqf3sAAWlpWyADrDMhAzagSJkdoNwqJoRUeYLVk7eJbmhefwRaQifIId~mlXfPekymHNwMZCFGDtEXguUSmBQOvy~ZW~xKN1~L-gUWWHwA__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/4e8c/6d12/3df7ae3af4ac30b349d609fa260030b1?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OBdckLAJFS-l77lLCMRp~k-d45mnbm821VKCFXw8JHVynF~uV4lIQOKkCD8MRKmsFdFI69lOaM4iiq6NksvoiHdB7o4iK6LRTXZS3GEJMoGmzvP0CTYrg5Adt6uv716ydaM6sj5~V-WHj-l9s6JvLw33GnOi8i6x9cvYEIiiCfDy2QtaLzRONz199Cly5GHaY8WpKxUn6sYm4ifqCS0vZwirPLT6TqsBg7JUEWhet6lmBLKpXGdLoC-X6lf4XYALVx3Z7oWKbplrMTHsUfnAcV1-b-Lb5KrRRYIqfbwhzvToMqcbJ6At8VsNWR3gRu6ZnUlaBrjrXCRO3nMTXeWbMg__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/032a/49f9/ab9951b59b021bcfcc6ac42b52e059ac?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fAARR8MwHSK1yDtREyvt0N1PMUHRGI71Df-~A58YpDq0Gb2yirf3wc5Ac7FiSwZebjQS8r5zIsOlDtAR4ZfHfF9HjwR1AgM0PutbuAWipjLWoMzI-CQF4QMCFKk9Hsw6SYuEn2Kzs7zrT0Y35arNDLizxYnH5WDEErnQmAs4iwMIpP8oVjXU6enjBQVt2QTIncaR8WYC78XH6zz4msh1hI3hBSwphVM0eXL17TnDWO0zh-34u67czfHsacQiK5V1MoqbB6IVNvJk6fJvDiJ5WLqr-0UNv9s7HKbPB-Ce8ZjcRQ7g98r304a0EEBiblZjGp8aBbu0RHoXvvTof3Hkeg__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/4e8c/6d12/3df7ae3af4ac30b349d609fa260030b1?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OBdckLAJFS-l77lLCMRp~k-d45mnbm821VKCFXw8JHVynF~uV4lIQOKkCD8MRKmsFdFI69lOaM4iiq6NksvoiHdB7o4iK6LRTXZS3GEJMoGmzvP0CTYrg5Adt6uv716ydaM6sj5~V-WHj-l9s6JvLw33GnOi8i6x9cvYEIiiCfDy2QtaLzRONz199Cly5GHaY8WpKxUn6sYm4ifqCS0vZwirPLT6TqsBg7JUEWhet6lmBLKpXGdLoC-X6lf4XYALVx3Z7oWKbplrMTHsUfnAcV1-b-Lb5KrRRYIqfbwhzvToMqcbJ6At8VsNWR3gRu6ZnUlaBrjrXCRO3nMTXeWbMg__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/fcb1/a822/a675ca20464208f0ae52f4b39b4c62f6?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=tZNU-9UMmumZ3BAOy1L0wUAKWx5lBbZGj5nFSfk9bpvYmBse~g1fgAPbqkHHcyYxEtt3Wds0ENcQHrkb4hUdlxBEKX0husBvVK5Pegkk-SIHoH3unVRmOs2iVhDPLUOH-k8Wo0x3I8D8WE8grcXkRQ9vOIoTWb3yFovbPqXbKcwzNv91~ZC5VnorEW6Xuu7oBC~RLazpiw4VEkYK1mygsA~hQ~ZeuNKc2bLVAXErRXrOaOovazqoNPv--RSG~Wscr5X4PYj-oSvDwGw1DFUr1FaNLQQPNf3RKqRRjqKU93IsciG-6AZCjkUvmxng3YKTzM-4R2kKvxXERux1kAHTJA__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/3f94/f2f7/f3aa3b1f8b3050858523ada936e1dd14?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fEdKm2LFHd1J7n6C7paeXX4KE1aiZMEiGWx2YttpI9Bw~Wb6Frke5P1gTdBaT4wnoe4UO45wjFH11nnNiOtBojxg83UNZ6affobyfXD5DDPz2X-x~Z6ob1U1Vbz86-9GXP1aKPU11zkqdUaIiueCvd8s3tJgF6gv2E6O86cCzh8J-w-scav0oylOeY42PHSqmFHdi2cFOXTswx4Fh25Y-RtmZJJP2XrsHxj~QnS0KvPwXqf3sAAWlpWyADrDMhAzagSJkdoNwqJoRUeYLVk7eJbmhefwRaQifIId~mlXfPekymHNwMZCFGDtEXguUSmBQOvy~ZW~xKN1~L-gUWWHwA__" alt="">
+                    <img src="https://s3-alpha-sig.figma.com/img/3f94/f2f7/f3aa3b1f8b3050858523ada936e1dd14?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=fEdKm2LFHd1J7n6C7paeXX4KE1aiZMEiGWx2YttpI9Bw~Wb6Frke5P1gTdBaT4wnoe4UO45wjFH11nnNiOtBojxg83UNZ6affobyfXD5DDPz2X-x~Z6ob1U1Vbz86-9GXP1aKPU11zkqdUaIiueCvd8s3tJgF6gv2E6O86cCzh8J-w-scav0oylOeY42PHSqmFHdi2cFOXTswx4Fh25Y-RtmZJJP2XrsHxj~QnS0KvPwXqf3sAAWlpWyADrDMhAzagSJkdoNwqJoRUeYLVk7eJbmhefwRaQifIId~mlXfPekymHNwMZCFGDtEXguUSmBQOvy~ZW~xKN1~L-gUWWHwA__" alt="">
                 </div>
-                <div>
-                    <label>ایمیل</label>
-                    <span>mahsashirinzaban751@gmail.com</span>
-                </div>
-                <div>
-                    <label>نام و نام خانوادگی</label>
-                    <span>09014892023</span>
-                </div>
-                <div>
-                    <label>جنسیت</label>
-                    <span>زن</span>
-                </div>
-                <img src="../styles/assets/edit-2.png" alt="">
-            </form>
+            </div>
         </div>
     </div>
 </body>

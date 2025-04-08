@@ -1,3 +1,39 @@
+
+.filterSection {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    height: 408px;
+    gap: 30px;
+   
+}
+.filterSection p , img {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000306;
+    cursor: pointer;
+}
+.priceFilters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.filters {
+    display: flex;
+   justify-content: space-between;
+   
+}
+.filterOption{
+    display: flex;
+    justify-content: space-between;
+
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 25px;
+}
 .container {
     display: flex;
     align-items: start;
@@ -14,6 +50,28 @@
 .filters {
     display: flex;
 }
+.noFilter {
+    color: #868686;
+    cursor: pointer;
+}
+.map {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.rightMap {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+
+}
+.mapSelected {
+    border-bottom: #FA541C solid 2px;
+    color: #FA541C;
+
+}
+
+
 li {
     list-style: none;
 }
@@ -49,6 +107,24 @@ li {
 }
 .item3 {
     background-image: url("https://s3-alpha-sig.figma.com/img/fb81/3af6/7d1f6fe13944e2448cda8fd12d853ff6?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ddefcSWd8~YyeaUMuKR4cO7f~EHsD98um9d-4Bncpi~u07QbiJwwsYPVMHEYWjA8kydD4mlQDI4w-AttkB3vjJgYpM7fMJMtnyykA5FCSZUSvganCmsFzNp8bk3SlanNo1twXQ5oHRWnZPvDUJjSz7BKBuu~-~ErSDJaVubVxGZdw1gG3K8OSXlsdhdEw2RXl4Y6VxjsgM1sd0BX~1BqTdriVV41dxxb2p9hnoeE1CvVYK1z5Psz9C98sodjjGNt8-o-KYo0ApRiYkSkJwLdHCwBXJUrNzYm7zlzg2e2rdBpewRPujHa8ZjipcXC6-OrB9244AK9XLhzeFDd1sRvig__");
+    flex-direction: column;
+    justify-content: end;
+}
+.sizeOptions {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    background-color: #cbcbcb;
+    width: 100%;
+    padding: 16px 28px;
+    justify-content: end;
+}
+.sizeOptions button {
+    width: 40px;
+    height: 41px;
+    font-size: 16px;
+    border: none;
 }
 .item4 {
     background-image: url("https://s3-alpha-sig.figma.com/img/6c45/a796/61b18c088a76fd99d9f917d203040fa4?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Jvp9ldVGqL7Rc-vrgcu4n0X~QDUOHDfED2CzHP715DX00aX6osI1TBpE~0L3cOMqrlKryy9SSEGORlTh4vzf1VVaiPRclVRrUKQe4v4oryHW7y8TSGXvrfFDjpvwJIOgnapEyPB-XhTmylxj6VrXV-0aqx32DrI4ikZw8cmv9HH5Atp3Fqf3PM9kF8oQmB9ZRZNA3PKJ3aaiNdj77gyWnNTOJZfcnag--R7C2Fz28ArZFbDdHgpR6fZWSCpyo2iavjIPsNg4h9-~zzAJX4dM3ntJt9W9OeSG9XvpduCCAsAZ6lWHzZGyERxficr2vVl6sQ8whusxmbNf9iYCDNV8ig__");
@@ -76,4 +152,122 @@ li {
 }
 .item12 {
     background-image: url("https://s3-alpha-sig.figma.com/img/8277/4be6/0c539d0ad5584cbb1778488786384a2a?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=UFhyl3M0Ju5PmiiN7Y1yVO8maxtTFAqC3o1V1y9C~nd~rcFDoyeLm27l0gRZIpCYf-4V4phr40UPUSLpAxgNgr0fHi5yOw733l5GsfpnDV~~xL5D~ROyhdjxszAfHmqQ8rrXAZbAsCSbdno7jHBo~NRZfSOXqfs0Gs12NidhZz9IAxhvL8I6lBgmSsSh~j8nVWRTb71HvRVo~RuMVtnxBEOwAl6qpxgB3-ef3PSN2RfRVKoNGN1f9hBI2BEXYx5sVQujK4ArKvC2lhgsIv~tQ3L3VRGTTVi6WxB4gguAosltdFh4amACglpMQS5RMBwAmmuuM3gA0JspFR-lpQ-q0g__");
+}
+.itemDescription {
+    display: flex;
+}
+.colorOptions {
+    display: flex;
+}
+.colorOption {
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: black;
+    margin-right: -5px;
+    cursor: pointer;
+}
+.colorOptionGreen {
+    background-color: #334B4F;
+    z-index: 3;
+}
+.colorOptionBrown {
+    background-color: #515549;
+    z-index: 2;
+}
+.colorOptionRed {
+    background-color: #F00000;
+}
+.colorOptionSilver {
+    background-color: #737989;
+    z-index: 3;
+}
+.colorOptionKhaki {
+    background-color: #716C59;
+    z-index: 2;
+}
+.colorOptionPink {
+    background-color: #FE9AA0;
+}
+.colorOptionIndianRed {
+    background-color: #925253;
+    z-index: 3;
+}
+.colorOptionPink {
+    background-color: #FE9AA0;
+}
+.colorOptionWhite {
+    background-color: #F2F2F2;
+    z-index: 3;
+}
+.colorOptionLightGreen {
+    background-color: #B9C28F;
+    z-index: 3;
+}
+.colorOptionSeashell {
+    background-color: #E7CBDD;
+    z-index: 3;
+}
+.colorOptionNavy {
+    background-color: #032340;
+}
+.colorOptionBlack {
+    border-color: #303032;
+    z-index: 3;
+}
+.colorOptionCyan {
+    background-color: #68D1B6;
+    z-index: 2;
+}
+.colorOptionBrightRed {
+    background-color: #E53935;
+}
+.colorOptionBerry {
+    background-color: #733C5E;
+    z-index: 3;
+}
+.colorOptionSlate {
+    background-color: #3A5152;
+}
+.colorOptionMocha {
+    background-color: #8B7767;
+    z-index: 3;
+}
+.colorOptionBurgundi {
+    background-color: #7D081E;
+    z-index: 2;
+}
+.colorOptionPistachio {
+    background-color: #7F9893;
+    z-index: 3;
+}
+.colorOptionPastel{
+    background-color: #AD96C6;
+}
+.colorOptionOrange {
+    background-color: #F15827;
+    z-index: 2;
+}
+
+.pageNumber {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+ 
+}
+.pageNumber span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+.pageNumber span:hover {
+    background: #010A13;
+    border-radius: 8px;
+    color: #FFFFFF;
 }
