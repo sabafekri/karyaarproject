@@ -1,0 +1,32 @@
+.productDetailsPageContainer {
+    width: 100%;
+}
+
+.up {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.littleImages {
+    display: flex;
+    justify-content: space-evenly;
+}
+.littleImages img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+.littleImages div {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    border: 1px solid #CBCBCB;
+}

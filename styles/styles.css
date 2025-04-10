@@ -173,6 +173,7 @@ h1 , .off , .contactInfo {
     width: 422px;
     height: 475px;
 }
+
 .introductionLeft {
     display: flex;
     flex-direction: column;
