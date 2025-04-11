@@ -1,0 +1,129 @@
+.productDetailContainer {
+    display: flex;
+    width: 100%;
+    padding: 0 108px;
+    gap:24px
+}
+.productDetailContainerRight {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.productDetail {
+    display: flex;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.productDetailInfo {
+    width: 417px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+.productDetailInfoTitle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.productDetailInfoSize {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.circles {
+    width: 16px;
+    height: 16px;
+    background-color: #344241;
+    border-radius: 100%;
+}
+.productDetailInfoColor {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.productAmountbuttons{
+    width: 101px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #606060;
+    border-radius: 8px;
+    color: #606060;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}
+.shoppingJurney {
+    display: flex;
+}
+
+.shoppingInfoSection {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+}
+.offSection {
+    display: flex;
+    flex-direction: column;
+    padding:16px;
+    gap: 8px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.offSection div {
+    display: flex;
+    gap: 12px;
+    height: 40px;
+}
+.offSection button {
+    width: 86px;
+    border: 1px solid #194165;
+    background-color: #fff;
+    color: #194165;
+    border-radius: 8px;
+}
+.offSection input {
+    width: 238px;
+    border: 1px solid #D6D6D6;
+    background-color: #fff;
+    border-radius: 8px;
+}
+.shoppingInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+.shoppingInfo div {
+    display: flex;
+    justify-content: space-between;
+}
+#orange {
+    color: #FA541C;
+}
+
+.shoppingInfo div:last-child {
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 8px;
+}
+.shoppingLastPrice {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+.shoppingLastPrice div {
+    display: flex;
+    justify-content: space-between;
+}
+.shoppingLastPrice button {
+    background-color: #FA541C;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    height: 48px;
+}

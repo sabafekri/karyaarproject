@@ -1,0 +1,135 @@
+.productDetailContainer {
+    display: flex;
+    width: 100%;
+    padding: 0 108px;
+    gap:24px
+}
+.productDetailContainerRight {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.productDetailContainerRight h2 {
+    color: #404040;
+    width: 100%;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 16px;
+}
+.productDetailsMessage p {
+    padding-top: 12px;
+}
+
+.productDetailsBriefContainer img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #CBCBCB;
+}
+
+.productsBriefs {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.productBriefInfoContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.productBriefInfo {
+    display: flex;
+    gap: 24px;
+}
+.productBriefInfoLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+.productBriefInfoLeftColors {
+    display: flex;
+    gap: 48px;
+}
+
+.productBriefInfoColor {
+    display: flex;
+    gap: 8px;
+}
+.black {
+    background-color: #344241;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+.nokhodi {
+    background-color: #CFB890;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+.pink {
+    background-color: #AD96C6;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+}
+.productDetailsAddress {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+    border: 1px solid #CBCBCB;
+    border-radius: 16px;
+}
+.productDetailsAddressInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.productDetailsTimeContainer button {
+    margin-top: 12px;
+    width: 93px;
+    height: 48px;
+    background-color: #FEEEE8;
+    border: 1px solid #FC9877;
+    color: #FC9877;
+    border-radius: 8px;
+}
+.productDetailsContainerBanks {
+    width: 392px;
+    border-radius: 8px;
+    border: 1px solid #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+}
+.productDetailsContainerBanks img {
+    width: 51px;
+    height: 51px;
+}
+.productDetailsContainerOneBank {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    align-items: center;
+}
+.productDetailsContainerOneBank div {
+    display: flex;
+    gap:8px
+}
+.productDetailsContainerBanks button {
+    background-color: #FA541C;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    height: 48px;
+}
+.hasline {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #CBCBCB;
+}
