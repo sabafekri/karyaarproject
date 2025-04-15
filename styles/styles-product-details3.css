@@ -133,3 +133,17 @@
     padding-bottom: 12px;
     border-bottom: 1px solid #CBCBCB;
 }
+
+@media only screen and (max-width: 500px) {
+    .productDetailContainer {
+        padding: 0 24px;
+        flex-direction: column;
+    }
+    .productBriefInfoContainer  {
+        width: 313px;
+    }
+    .productDetailsAddress img {
+        width: 148px;
+        height: 132px;
+    }
+}

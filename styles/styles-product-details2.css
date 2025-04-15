@@ -127,3 +127,15 @@
     border-radius: 8px;
     height: 48px;
 }
+
+@media only screen and (max-width: 500px) {
+    .productDetailContainer {
+        flex-direction: column;
+        padding: 0 24px;
+    }
+    .productDetail img {
+        width: 81px;
+        height: 86px;
+    }
+    
+}

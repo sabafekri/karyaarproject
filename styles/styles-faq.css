@@ -1,3 +1,4 @@
+
 .faqMenuContainer {
     width: 100%;
     padding: 0 108px;
@@ -25,6 +26,13 @@
     border-radius: 8px;
     width: 496px;
     padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.faqTitle {
+    font-size: 28px;
+    font-weight: 400;
 }
 .faqSearchContainer input {
     outline: none;
@@ -37,7 +45,7 @@
     justify-content: start;
     gap: 8px;
 }
-.faqContainerRightContest {
+.faqContainerRightContext {
     display: flex;
     align-items: center;
     justify-content: start;
@@ -72,15 +80,29 @@
     align-items: center;
     font-size: 28px;
 }
-.faqContainerLeftConest {
+.faqContainerLeftContext {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 16px 10px;
+    font-size: 16px;
+    font-weight: 400;
 }
-.faqContainerLeftConestHolder {
+h3 {
+    font-size: 16px;
+}
+.answer {
+    font-size: 14px;
+}
+.faqContainerLeftContextHolder {
     width: 100%;
     background-color: #F9F9F9;
     padding: 32px 24px;
     border-radius: 8px;
+}
+
+/* Responsive Section */
+
+@media only screen and (max-width: 400px) {
+
 }
